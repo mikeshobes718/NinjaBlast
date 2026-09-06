@@ -1,0 +1,16 @@
+.DS_Store
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.idea/
+asc.sh
+asc_jwt.js
+.asc_tmp/
+docs/screenshots/.tmp/
