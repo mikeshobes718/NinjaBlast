@@ -20,7 +20,13 @@ jobs:
       - name: Select Xcode
         run: |
           ls /Applications | grep -i xcode
-          sudo xcode-select -s /Applications/Xcode.app
+          if [ -d /Applications/Xcode_26.6.app ]; then
+            sudo xcode-select -s /Applications/Xcode_26.6.app
+          elif [ -d /Applications/Xcode_26.3.app ]; then
+            sudo xcode-select -s /Applications/Xcode_26.3.app
+          else
+            sudo xcode-select -s /Applications/Xcode_26.2.app
+          fi
           xcodebuild -version
           xcodebuild -showsdks
 
