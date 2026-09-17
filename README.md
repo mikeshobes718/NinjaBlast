@@ -5,11 +5,16 @@ Native iPhone companion for the Ninja Blast portable blenders. It covers two dev
 | Device | Series | Vessel | Controls |
 | --- | --- | --- | --- |
 | Blast | BC100BZ | 470 ml · 16 oz | Power + Start/Stop, 30 s cycle |
-| Blast MAX | BC200 | 590 ml · 20 oz | Dial: Blend / power / Crush, plus Auto-iQ |
+| Blast MAX | BC200 | 590 ml · 20 oz | Three buttons: POWER, BLEND, CRUSH |
 
-Each device carries its own specs, owner's-guide topics, blend steps, load order, cleaning, troubleshooting, LED rows, and box-insert recipes. The MAX content comes from the BC200 quick-start card and recipe insert; where that card documents nothing (LED codes other than the green ready light, parts list, storage), the app says so rather than borrowing the BC100 answer.
+Each device carries its own specs, owner's-guide topics, blend steps, load order, cleaning, troubleshooting, LED rows, and box-insert recipes. The MAX has no dial and no separate Auto-iQ button — BLEND is a 30-second manual run and CRUSH *is* the Auto-iQ program, about 30 seconds of pulses and pauses.
 
-Five tabs: **Guide**, **Blend** (cycle timer), **Recipes** (299 per device), **Counter** (nutrition tracker), **Lights** (LED decoder).
+MAX content is taken from SharkNinja's own BC200 Series documents, kept in [docs/sources/](docs/sources/) so any claim in the app can be checked against its source. Two things in there are worth knowing because they are easy to get wrong:
+
+- **Orange means two different things.** On the power symbol it is a battery level (about half left). On the BLEND and CRUSH lights it is the overheating cutout — cool for 60 minutes, and it will not charge until it has. Ninja's owner's guide says those overheat lights are solid while its own FAQ says flashing, so the app treats any orange on the program lights as overheating.
+- **There is no lid warning light.** The interlock is on the vessel, not the lid: flashing white program lights mean the vessel is not twisted on properly. The guide warns the opposite way round — the blades can still run with the sip lid off, so power the base off when you are not using it.
+
+Five tabs: **Guide**, **Blend** (cycle timer), **Recipes** (1,124 per device), **Counter** (nutrition tracker), **Lights** (LED decoder).
 
 Bundle id: `app.blast.guide`
 
@@ -40,15 +45,21 @@ flowchart TD
 
 ## Recipes and nutrition
 
-`Blast/Resources/foods.json` (181 ingredients) and `recipes.json` (294 recipes) are generated, never hand-edited:
+`Blast/Resources/foods.json` (518 ingredients) and `recipes.json` (1,119 recipes) are generated, never hand-edited:
 
 ```
 python3 scripts/build_data.py
 ```
 
-`scripts/recipes_data.py` holds the recipe rows — name, servings, prep time, `(food_id, amount, unit)` ingredients, tip. `build_data.py` holds the ingredient table with per-100 g nutrition, cup/piece weights, and dietary flags, then assembles the JSON: it resolves every food id, picks BLEND or CRUSH from the ingredients, and scales bulk ingredients down until the recipe fits the vessel (protein scoops and spices stay fixed). It prints a report — category counts, how many fit each vessel, kcal spread — so a bad row is visible before the build.
+- `scripts/foods_data.py` — the ingredient table: per-100 g nutrition, what a cup of it weighs, what one piece of it weighs, and the dietary flag sets.
+- `scripts/recipes_*.py` — the recipe rows, one module per batch: `(id, name, category, servings, prep, [(food_id, amount, unit)], tip)`. Add a new module and the build picks it up; nothing needs registering.
+- `scripts/build_data.py` — assembles both into JSON.
 
-The 10 box-insert recipes live in `Blast/Nutrition/PrintedRecipes.swift` instead, quoting the printed wording and directions verbatim and pinned to the device they shipped with — so each device shows its own 5 plus the shared 294. The library recipes have no stored steps; `Recipe.steps(for:)` generates them from the device's load order and program, the way Ninja's own inserts repeat the same directions on every card.
+The build is where the correctness lives. It rejects an unknown food id, a bad unit, a `piece` amount on something with no piece weight, a duplicate id or name, and a recipe with no liquid in it — that last one because the Blast will not blend dry ingredients, it just spins. Then it picks BLEND or CRUSH from the category and the ice, and scales the bulk of each recipe down until it fits the vessel while protein scoops and spices stay put, because halving those changes the recipe rather than the serving. It finishes by printing category counts, vessel fit and the calorie spread, so a bad row shows up before the app is built.
+
+The 10 box-insert recipes live in `Blast/Nutrition/PrintedRecipes.swift` instead, quoting the printed wording and directions verbatim and pinned to the device they shipped with — so each device shows its own 5 plus the shared 1,119. The library recipes have no stored steps; `Recipe.steps(for:)` generates them from the device's load order and program, the way Ninja's own inserts repeat the same directions on every card.
+
+At this size the tab needs more than a list, so `RecipeIndex` computes each recipe's nutrition, volume, tags and one folded search string exactly once at load, and the filtering, sorting and the pantry matcher all read from that rather than recomputing per keystroke. On top of it: saved recipes, recently opened, eight collections, nine sort orders, ten filters, and **What can I make?** — tell it what is in the kitchen and it lists what you can make now, then what you are one or two ingredients short of.
 
 Dietary tags (vegan, dairy-free, nut-free, gluten-free, caffeine, alcohol) and the high-protein / low-sugar / high-fiber tags are **derived** from ingredient flags and computed nutrition at read time, so a filter can never disagree with what is in the cup.
 

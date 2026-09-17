@@ -2,35 +2,32 @@ import SwiftUI
 
 struct RecipesView: View {
     @EnvironmentObject private var store: DeviceStore
+    @EnvironmentObject private var library: RecipeLibraryStore
     @State private var filter = RecipeFilter()
     @State private var showingFilters = false
+    @State private var showingPantry = false
+    @State private var surprise: Recipe?
 
     private let columns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
-    private var results: [Recipe] {
-        filter.apply(to: RecipeBook.all(for: store.kind), guide: store.guide)
-    }
+    private var all: [Recipe] { RecipeBook.all(for: store.kind) }
 
     var body: some View {
         NavigationStack {
+            let results = filter.apply(to: all, guide: store.guide, favorites: library.favorites)
+
             ScrollView {
-                LazyVStack(spacing: 14, pinnedViews: []) {
+                LazyVStack(spacing: 14) {
                     categoryStrip
-                    header
-                    if results.isEmpty {
-                        empty
+                    if filter.isPristine {
+                        browse
                     } else {
-                        LazyVGrid(columns: columns, spacing: 12) {
-                            ForEach(results) { recipe in
-                                NavigationLink {
-                                    RecipeDetailView(recipe: recipe)
-                                } label: {
-                                    RecipeCard(recipe: recipe)
-                                }
-                                .buttonStyle(.plain)
-                            }
+                        header(count: results.count)
+                        if results.isEmpty {
+                            empty
+                        } else {
+                            grid(results)
                         }
-                        .padding(.horizontal, 16)
                     }
                 }
                 .padding(.bottom, 28)
@@ -57,7 +54,211 @@ struct RecipesView: View {
             .sheet(isPresented: $showingFilters) {
                 RecipeFilterSheet(filter: $filter, guide: store.guide)
             }
+            .sheet(isPresented: $showingPantry) {
+                PantryView(recipes: all)
+            }
+            .navigationDestination(item: $surprise) { recipe in
+                RecipeDetailView(recipe: recipe)
+            }
         }
+    }
+
+    // MARK: - Browse
+
+    @ViewBuilder
+    private var browse: some View {
+        pantryCard
+
+        if !library.favorites.isEmpty {
+            shelf(
+                title: "Saved",
+                recipes: all.filter { library.favorites.contains($0.id) }
+            )
+        }
+
+        if !library.recents.isEmpty {
+            shelf(
+                title: "Recently opened",
+                recipes: library.recents.compactMap { id in all.first { $0.id == id } }
+            )
+        }
+
+        VStack(alignment: .leading, spacing: 10) {
+            SectionLabel(text: "Collections")
+            VStack(spacing: 8) {
+                ForEach(RecipeCollection.all) { collection in
+                    Button {
+                        var next = collection.filter
+                        next.query = ""
+                        filter = next
+                    } label: {
+                        collectionRow(collection)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .padding(.horizontal, 16)
+
+        VStack(alignment: .leading, spacing: 10) {
+            SectionLabel(text: "Every category")
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(RecipeCategory.allCases) { category in
+                    let count = all.filter { $0.category == category }.count
+                    Button { filter.category = category } label: {
+                        categoryTile(category, count: count)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .padding(.horizontal, 16)
+
+        Button {
+            surprise = all.randomElement()
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "dice.fill")
+                Text("Surprise me").fontWeight(.semibold)
+            }
+            .font(.headline)
+            .foregroundStyle(.white)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 15)
+            .background(BlastTheme.cardLift, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .padding(.horizontal, 16)
+        .padding(.top, 4)
+
+        Text("\(all.count) recipes for the \(store.kind.shortName)")
+            .font(.footnote)
+            .foregroundStyle(BlastTheme.secondary)
+            .frame(maxWidth: .infinity)
+            .padding(.top, 6)
+    }
+
+    private var pantryCard: some View {
+        Button { showingPantry = true } label: {
+            HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(BlastTheme.red)
+                    Image(systemName: "refrigerator.fill")
+                        .font(.title3)
+                        .foregroundStyle(.white)
+                }
+                .frame(width: 46, height: 46)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("What can I make?")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                    Text(library.pantry.isEmpty
+                         ? "Tell it what's in the kitchen"
+                         : "\(library.pantry.count) ingredient\(library.pantry.count == 1 ? "" : "s") on hand")
+                        .font(.subheadline)
+                        .foregroundStyle(BlastTheme.secondary)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(BlastTheme.secondary)
+            }
+            .padding(16)
+            .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .padding(.horizontal, 16)
+    }
+
+    private func shelf(title: String, recipes: [Recipe]) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            SectionLabel(text: title)
+                .padding(.horizontal, 16)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    ForEach(recipes) { recipe in
+                        NavigationLink {
+                            RecipeDetailView(recipe: recipe)
+                        } label: {
+                            RecipeMiniCard(recipe: recipe)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
+        }
+    }
+
+    private func collectionRow(_ collection: RecipeCollection) -> some View {
+        HStack(spacing: 12) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10, style: .continuous).fill(collection.tint)
+                Image(systemName: collection.symbol)
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(.white)
+            }
+            .frame(width: 34, height: 34)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(collection.title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white)
+                Text(collection.subtitle)
+                    .font(.caption)
+                    .foregroundStyle(BlastTheme.secondary)
+            }
+            Spacer(minLength: 0)
+            Image(systemName: "chevron.right")
+                .font(.caption.weight(.bold))
+                .foregroundStyle(BlastTheme.secondary)
+        }
+        .padding(12)
+        .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+    }
+
+    private func categoryTile(_ category: RecipeCategory, count: Int) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: category.symbol)
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(.white)
+                .frame(width: 26, height: 26)
+                .background(category.accent, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+            VStack(alignment: .leading, spacing: 1) {
+                Text(category.title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white)
+                Text("\(count)")
+                    .font(.caption)
+                    .foregroundStyle(BlastTheme.secondary)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    // MARK: - Results
+
+    private func grid(_ results: [Recipe]) -> some View {
+        LazyVGrid(columns: columns, spacing: 12) {
+            ForEach(results) { recipe in
+                NavigationLink {
+                    RecipeDetailView(recipe: recipe)
+                } label: {
+                    RecipeCard(recipe: recipe, isFavorite: library.isFavorite(recipe.id))
+                }
+                .buttonStyle(.plain)
+                .contextMenu {
+                    Button {
+                        library.toggleFavorite(recipe.id)
+                    } label: {
+                        Label(library.isFavorite(recipe.id) ? "Remove from saved" : "Save",
+                              systemImage: library.isFavorite(recipe.id) ? "heart.slash" : "heart")
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 16)
     }
 
     private var categoryStrip: some View {
@@ -74,12 +275,15 @@ struct RecipesView: View {
         }
     }
 
-    private var header: some View {
+    private func header(count: Int) -> some View {
         HStack {
-            Text("\(results.count) recipe\(results.count == 1 ? "" : "s")")
+            Text("\(count) recipe\(count == 1 ? "" : "s")")
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(BlastTheme.secondary)
             Spacer()
+            Button("Clear") { filter.reset() }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(BlastTheme.secondary)
             Menu {
                 Picker("Sort", selection: $filter.sort) {
                     ForEach(RecipeSort.allCases) { option in
@@ -122,6 +326,199 @@ struct RecipesView: View {
     }
 }
 
+// MARK: - What can I make
+
+struct PantryView: View {
+    let recipes: [Recipe]
+
+    @EnvironmentObject private var library: RecipeLibraryStore
+    @Environment(\.dismiss) private var dismiss
+    @State private var query = ""
+    @State private var category: FoodCategory?
+
+    private var foods: [Food] {
+        FoodBook.all.filter { food in
+            (category == nil || food.category == category) && food.matches(query)
+        }
+    }
+
+    private var matches: [(recipe: Recipe, missing: [Food])] {
+        library.matches(in: recipes)
+    }
+
+    var body: some View {
+        NavigationStack {
+            VStack(spacing: 0) {
+                if !library.pantry.isEmpty {
+                    selectedStrip
+                }
+                categoryStrip
+                    .padding(.vertical, 10)
+                List {
+                    ForEach(foods) { food in
+                        Button {
+                            library.togglePantry(food.id)
+                        } label: {
+                            HStack(spacing: 12) {
+                                FoodBadge(category: food.category, size: 30)
+                                Text(food.name)
+                                    .foregroundStyle(.white)
+                                Spacer(minLength: 0)
+                                if library.pantry.contains(food.id) {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundStyle(BlastTheme.red)
+                                }
+                            }
+                        }
+                        .listRowBackground(BlastTheme.card)
+                    }
+                }
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
+            }
+            .background(BlastTheme.bg.ignoresSafeArea())
+            .searchable(text: $query, prompt: "Search ingredients")
+            .navigationTitle("In my kitchen")
+            .navigationBarTitleDisplayMode(.inline)
+            .safeAreaInset(edge: .bottom) {
+                if !library.pantry.isEmpty {
+                    NavigationLink {
+                        PantryMatchesView(matches: matches)
+                    } label: {
+                        Text(matches.isEmpty
+                             ? "No matches yet — add a few more"
+                             : "See \(matches.count) recipe\(matches.count == 1 ? "" : "s")")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background(matches.isEmpty ? BlastTheme.cardLift : BlastTheme.red,
+                                        in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(matches.isEmpty)
+                    .padding(16)
+                    .background(.ultraThinMaterial)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Clear") { library.clearPantry() }
+                        .foregroundStyle(BlastTheme.secondary)
+                        .disabled(library.pantry.isEmpty)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }.fontWeight(.semibold)
+                }
+            }
+        }
+    }
+
+    private var selectedStrip: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(library.pantry.compactMap(FoodBook.food).sorted { $0.name < $1.name }) { food in
+                    Button {
+                        library.togglePantry(food.id)
+                    } label: {
+                        HStack(spacing: 5) {
+                            Text(food.name).font(.footnote.weight(.semibold))
+                            Image(systemName: "xmark").font(.caption2.weight(.bold))
+                        }
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 7)
+                        .background(BlastTheme.red, in: Capsule())
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 12)
+        }
+    }
+
+    private var categoryStrip: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                FilterChip(title: "All", isOn: category == nil) { category = nil }
+                ForEach(FoodCategory.allCases) { option in
+                    FilterChip(title: option.title, isOn: category == option, tint: option.tint) {
+                        category = category == option ? nil : option
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+}
+
+struct PantryMatchesView: View {
+    let matches: [(recipe: Recipe, missing: [Food])]
+
+    private var ready: [(recipe: Recipe, missing: [Food])] { matches.filter { $0.missing.isEmpty } }
+    private var nearly: [(recipe: Recipe, missing: [Food])] { matches.filter { !$0.missing.isEmpty } }
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                if !ready.isEmpty {
+                    section("You can make these now", items: ready)
+                }
+                if !nearly.isEmpty {
+                    section("One or two short", items: nearly)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 28)
+        }
+        .background(BlastTheme.bg.ignoresSafeArea())
+        .navigationTitle("Matches")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func section(_ title: String, items: [(recipe: Recipe, missing: [Food])]) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            SectionLabel(text: title)
+            VStack(spacing: 8) {
+                ForEach(items, id: \.recipe.id) { item in
+                    NavigationLink {
+                        RecipeDetailView(recipe: item.recipe)
+                    } label: {
+                        HStack(spacing: 12) {
+                            Image(systemName: item.recipe.symbol)
+                                .font(.subheadline.weight(.bold))
+                                .foregroundStyle(.white)
+                                .frame(width: 30, height: 30)
+                                .background(item.recipe.accent, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(item.recipe.name)
+                                    .font(.subheadline.weight(.semibold))
+                                    .foregroundStyle(.white)
+                                Text(item.missing.isEmpty
+                                     ? "\(item.recipe.totalMinutes) min · everything on hand"
+                                     : "need \(item.missing.map { $0.name.lowercased() }.joined(separator: ", "))")
+                                    .font(.caption)
+                                    .foregroundStyle(BlastTheme.secondary)
+                                    .lineLimit(1)
+                            }
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right")
+                                .font(.caption.weight(.bold))
+                                .foregroundStyle(BlastTheme.secondary)
+                        }
+                        .padding(12)
+                        .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Filters
+
 struct RecipeFilterSheet: View {
     @Binding var filter: RecipeFilter
     let guide: Guide
@@ -135,13 +532,13 @@ struct RecipeFilterSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
                     group("Diet") {
-                        chipGrid(DietFilter.allCases.filter { [.vegan, .dairyFree, .nutFree, .glutenFree].contains($0) })
+                        chipGrid([.vegan, .dairyFree, .nutFree, .glutenFree])
                     }
                     group("Nutrition") {
-                        chipGrid(DietFilter.allCases.filter { [.highProtein, .lowSugar, .highFiber].contains($0) })
+                        chipGrid([.highProtein, .lowSugar, .highFiber, .noAddedSugar])
                     }
                     group("Avoid") {
-                        chipGrid(DietFilter.allCases.filter { [.caffeineFree, .noAlcohol].contains($0) })
+                        chipGrid([.caffeineFree, .noAlcohol])
                     }
                     group("Calories per serving") {
                         HStack(spacing: 8) {
@@ -156,12 +553,17 @@ struct RecipeFilterSheet: View {
                             }
                         }
                     }
-                    group("Vessel") {
-                        FilterChip(
-                            title: "Fits my \(guide.kind.shortName) in one blend",
-                            isOn: filter.fitsVesselOnly
-                        ) {
-                            filter.fitsVesselOnly.toggle()
+                    group("Show only") {
+                        FlowLayout(spacing: 8) {
+                            FilterChip(
+                                title: "Fits my \(guide.kind.shortName) in one blend",
+                                isOn: filter.fitsVesselOnly
+                            ) {
+                                filter.fitsVesselOnly.toggle()
+                            }
+                            FilterChip(title: "Saved", isOn: filter.favoritesOnly) {
+                                filter.favoritesOnly.toggle()
+                            }
                         }
                     }
                 }
@@ -246,8 +648,13 @@ struct FlowLayout: Layout {
     }
 }
 
+// MARK: - Cards
+
 struct RecipeCard: View {
     let recipe: Recipe
+    var isFavorite = false
+
+    private var facts: RecipeFacts { RecipeIndex.facts(for: recipe) }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -262,15 +669,22 @@ struct RecipeCard: View {
                     .foregroundStyle(.white.opacity(0.92))
                 VStack {
                     HStack(alignment: .top) {
-                        pill("\(Int(recipe.perServing.kcal.rounded())) kcal")
+                        pill("\(Int(facts.perServing.kcal.rounded())) kcal")
                         Spacer(minLength: 4)
                         pill(recipe.program.label)
                     }
                     Spacer()
-                    if recipe.printedFor != nil {
-                        HStack {
+                    HStack(spacing: 4) {
+                        if recipe.printedFor != nil {
                             pill("From the box")
-                            Spacer(minLength: 0)
+                        }
+                        Spacer(minLength: 0)
+                        if isFavorite {
+                            Image(systemName: "heart.fill")
+                                .font(.caption2.weight(.bold))
+                                .foregroundStyle(.white)
+                                .padding(5)
+                                .background(.black.opacity(0.35), in: Circle())
                         }
                     }
                 }
@@ -296,7 +710,7 @@ struct RecipeCard: View {
     }
 
     private var subtitle: String {
-        let protein = Int(recipe.perServing.protein.rounded())
+        let protein = Int(facts.perServing.protein.rounded())
         if protein >= 15 {
             return "\(recipe.totalMinutes) min · \(protein)g protein"
         }
@@ -313,20 +727,56 @@ struct RecipeCard: View {
     }
 }
 
+/// The compact card the horizontal shelves use.
+struct RecipeMiniCard: View {
+    let recipe: Recipe
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ZStack {
+                LinearGradient(
+                    colors: [recipe.accent, recipe.accent.opacity(0.55)],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                Image(systemName: recipe.symbol)
+                    .font(.system(size: 24, weight: .semibold))
+                    .foregroundStyle(.white.opacity(0.92))
+            }
+            .frame(height: 68)
+            Text(recipe.name)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.white)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+                .padding(9)
+                .frame(maxWidth: .infinity, minHeight: 50, alignment: .topLeading)
+        }
+        .frame(width: 128)
+        .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+    }
+}
+
+// MARK: - Detail
+
 struct RecipeDetailView: View {
     let recipe: Recipe
 
     @EnvironmentObject private var store: DeviceStore
     @EnvironmentObject private var builder: BlendBuilder
+    @EnvironmentObject private var library: RecipeLibraryStore
     @State private var tab = 0
     @State private var loaded = false
+
+    private var facts: RecipeFacts { RecipeIndex.facts(for: recipe) }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 hero
-                if !recipe.fits(store.guide) {
-                    WarningBanner(text: "This loads about \(Int(recipe.volumeML.rounded())) ml, past the MAX FILL line on the \(store.kind.shortName). Halve it or blend it in two batches.")
+                if facts.volumeML > store.guide.maxFillML + 1 {
+                    WarningBanner(text: "This loads about \(Int(facts.volumeML.rounded())) ml, past the MAX FILL line on the \(store.kind.shortName). Halve it or blend it in two batches.")
                 }
                 tagRow
                 Picker("Section", selection: $tab) {
@@ -348,6 +798,18 @@ struct RecipeDetailView: View {
         .background(BlastTheme.bg.ignoresSafeArea())
         .navigationTitle(recipe.name)
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { library.markViewed(recipe.id) }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    library.toggleFavorite(recipe.id)
+                } label: {
+                    Image(systemName: library.isFavorite(recipe.id) ? "heart.fill" : "heart")
+                        .foregroundStyle(library.isFavorite(recipe.id) ? BlastTheme.red : BlastTheme.secondary)
+                }
+                .accessibilityLabel(library.isFavorite(recipe.id) ? "Remove from saved" : "Save recipe")
+            }
+        }
     }
 
     private var hero: some View {
@@ -363,7 +825,7 @@ struct RecipeDetailView: View {
                 Text(recipe.timeText)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(.white)
-                Text("\(recipe.yieldText) · \(Int(recipe.perServing.kcal.rounded())) kcal each")
+                Text("\(recipe.yieldText) · \(Int(facts.perServing.kcal.rounded())) kcal each")
                     .font(.subheadline)
                     .foregroundStyle(BlastTheme.secondary)
                 Text("Program · \(recipe.program.label)")
@@ -464,7 +926,7 @@ struct RecipeDetailView: View {
             Card {
                 VStack(alignment: .leading, spacing: 14) {
                     HStack(alignment: .firstTextBaseline, spacing: 6) {
-                        Text("\(Int(recipe.perServing.kcal.rounded()))")
+                        Text("\(Int(facts.perServing.kcal.rounded()))")
                             .font(.system(size: 40, weight: .bold, design: .rounded))
                             .foregroundStyle(.white)
                         Text("kcal per serving")
@@ -472,7 +934,7 @@ struct RecipeDetailView: View {
                             .foregroundStyle(BlastTheme.secondary)
                         Spacer(minLength: 0)
                     }
-                    MacroSplitBar(nutrients: recipe.perServing)
+                    MacroSplitBar(nutrients: facts.perServing)
                 }
             }
             NavigationLink {

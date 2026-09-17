@@ -110,7 +110,10 @@ struct RecipeIngredient: Codable, Identifiable {
     }
 }
 
-struct Recipe: Identifiable, Codable {
+struct Recipe: Identifiable, Codable, Hashable {
+    static func == (lhs: Recipe, rhs: Recipe) -> Bool { lhs.id == rhs.id }
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
+
     let id: String
     let name: String
     let category: RecipeCategory

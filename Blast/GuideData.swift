@@ -286,16 +286,16 @@ extension GuideBook {
         timerNote: "Matches BLEND, the 30-second manual mode. Press the program button again at any time to stop early.",
         specs: [
             SpecItem(id: "cap", title: "Capacity", value: "20 oz · 590 ml", icon: "cup.and.saucer.fill"),
-            SpecItem(id: "fill", title: "Fill range", value: "MIN 200 ml → MAX FILL", icon: "drop.fill"),
+            SpecItem(id: "fill", title: "Fill range", value: "177–473 ml", icon: "drop.fill"),
             SpecItem(id: "blend", title: "Blend", value: "30 seconds, manual", icon: "timer"),
-            SpecItem(id: "crush", title: "Crush", value: "Frozen drinks", icon: "snowflake"),
-            SpecItem(id: "autoiq", title: "Auto-iQ", value: "Pulses + pauses", icon: "wand.and.stars"),
-            SpecItem(id: "time", title: "First charge", value: "Up to 3 hours", icon: "bolt.fill"),
+            SpecItem(id: "crush", title: "Crush", value: "Auto-iQ, frozen drinks", icon: "snowflake"),
+            SpecItem(id: "charger", title: "Charger", value: "13.3V DC · 0.75A", icon: "bolt.fill"),
+            SpecItem(id: "time", title: "Full charge", value: "About 3 hours", icon: "clock.fill"),
         ],
         topics: [
             GuideTopic(id: .setup, title: "First-time setup", subtitle: "Charge up to 3 hours, then quick clean", icon: "sparkles", tint: Color(red: 1, green: 0.72, blue: 0.2)),
             GuideTopic(id: .blendHow, title: "How to blend", subtitle: "Twist on, load, pick a program", icon: "play.circle.fill", tint: BlastTheme.red),
-            GuideTopic(id: .programs, title: "Blend programs", subtitle: "Blend, Auto-iQ, Crush", icon: "dial.medium.fill", tint: Color(red: 0.55, green: 0.5, blue: 0.95)),
+            GuideTopic(id: .programs, title: "Blend programs", subtitle: "BLEND manual, CRUSH on Auto-iQ", icon: "square.grid.2x2.fill", tint: Color(red: 0.55, green: 0.5, blue: 0.95)),
             GuideTopic(id: .battery, title: "Charging", subtitle: "Green power light means full", icon: "battery.75", tint: Color(red: 0.35, green: 0.82, blue: 0.45)),
             GuideTopic(id: .clean, title: "3 ways to clean", subtitle: "Quick clean, hand-wash, dishwasher", icon: "drop.circle.fill", tint: iceTint),
             GuideTopic(id: .trouble, title: "Troubleshooting", subtitle: "Too thick, not blending", icon: "wrench.and.screwdriver.fill", tint: Color(red: 1, green: 0.55, blue: 0.2)),
@@ -327,10 +327,11 @@ extension GuideBook {
             "Do not blend without ingredients or without the lid. Do not go past the MAX FILL line when loading the vessel.",
             "Unintentional blending can occur when the lid is removed. Turn the motor base off with the power button when not in use.",
         ],
+        // Three buttons on the base: POWER, BLEND, CRUSH. Auto-iQ is not a
+        // button of its own — CRUSH is the Auto-iQ program.
         programs: [
             Program(id: "blend", name: "BLEND", detail: "30-second manual mode for protein shakes and fruit smoothies.", icon: "timer", tint: BlastTheme.red),
-            Program(id: "autoiq", name: "AUTO-iQ", detail: "Pre-programmed pulses and pauses to blend through tough ingredients.", icon: "wand.and.stars", tint: Color(red: 0.55, green: 0.5, blue: 0.95)),
-            Program(id: "crush", name: "CRUSH", detail: "For frozen drinks.", icon: "snowflake", tint: iceTint),
+            Program(id: "crush", name: "CRUSH", detail: "The Auto-iQ program: about 30 seconds of pulses and pauses, for frozen drinks and ice.", icon: "snowflake", tint: iceTint),
         ],
         loadOrder: [
             LoadLayer(title: "5 · Ice / frozen last", subtitle: "Using more frozen? Add more liquid", tint: iceTint),
@@ -403,11 +404,25 @@ extension GuideBook {
                 ]
             ),
         ],
+        // The BC200 has two sets of lights and they mean different things: the
+        // power-button icon reports the battery, the BLEND/CRUSH rings report
+        // the blend. Orange appears in both and means something different in
+        // each, which is the easiest thing here to get wrong.
         leds: [
-            LEDStatus(id: "green", title: "Green power symbol", meaning: "Battery is full and the unit is ready.", action: "Go ahead and pick BLEND or CRUSH.", colorA: greenLED, colorB: nil, pulse: .solid),
+            LEDStatus(id: "pwr-green", title: "Power symbol solid green", meaning: "Fully charged.", action: "Ready to blend.", colorA: greenLED, colorB: nil, pulse: .solid),
+            LEDStatus(id: "pwr-green-flash", title: "Power symbol flashing green", meaning: "Charging.", action: "Leave it plugged in. A full charge takes about 3 hours, then it goes solid green.", colorA: greenLED, colorB: nil, pulse: .flash),
+            LEDStatus(id: "pwr-orange", title: "Power symbol solid orange", meaning: "About half the battery left.", action: "Enough for a few more blends. Charge it before anything frozen.", colorA: Color(red: 1, green: 0.55, blue: 0.1), colorB: nil, pulse: .solid),
+            LEDStatus(id: "pwr-red", title: "Power symbol solid red", meaning: "Low battery.", action: "Plug in the charging cable.", colorA: BlastTheme.red, colorB: nil, pulse: .solid),
+            LEDStatus(id: "pwr-red-flash", title: "Power symbol flashing red", meaning: "No battery left.", action: "Plug in the charging cable. A full charge takes about 3 hours.", colorA: BlastTheme.red, colorB: nil, pulse: .flash),
+            LEDStatus(id: "pwr-red-green", title: "Power symbol flashing red + green", meaning: "Wrong charger.", action: "Unplug it and use the Ninja cable that came in the box — 13.3V DC, 0.75A. Give it about 15 seconds after plugging in before reading this light.", colorA: BlastTheme.red, colorB: greenLED, pulse: .pair),
+            LEDStatus(id: "prog-white", title: "Program lights solid white", meaning: "Vessel is seated and it is ready to blend.", action: "Pick BLEND or CRUSH.", colorA: .white, colorB: nil, pulse: .solid),
+            LEDStatus(id: "prog-white-flash", title: "Program lights flashing white", meaning: "Vessel is not properly installed.", action: "Re-install the vessel on the motor base, twisting clockwise until it clicks.", colorA: .white, colorB: nil, pulse: .flash),
+            LEDStatus(id: "prog-purple", title: "Selected program flashing purple", meaning: "Blades are blocked, or the load is too heavy.", action: "Add more liquid, or take the vessel off and shake the blockage free, then reinstall and blend again.", colorA: Color(red: 0.62, green: 0.32, blue: 0.92), colorB: nil, pulse: .flash),
+            LEDStatus(id: "prog-orange", title: "Program lights orange", meaning: "Motor base is overheating.", action: "Let it sit at room temperature for at least 60 minutes. It will not charge until it has cooled down.", colorA: Color(red: 1, green: 0.45, blue: 0.1), colorB: nil, pulse: .solid),
+            LEDStatus(id: "all-red", title: "All lights flashing red", meaning: "Motor error.", action: "This one needs SharkNinja — call customer service.", colorA: BlastTheme.red, colorB: nil, pulse: .flash),
         ],
-        ledNote: "The BC200 quick-start card only documents the green ready light. If your Blast MAX shows another color, check the full Ninja Owner's Guide or call support — the BC100 Blast codes do not necessarily apply.",
-        minLiquidML: 200,
-        maxFillML: 470
+        ledNote: "Orange means two different things depending on where it is: on the power symbol it is a battery level, on the BLEND and CRUSH lights it is the overheating cutout. Ninja's own documents disagree on whether the overheat lights are solid or flashing, so treat any orange on the program lights as overheating. From the BC200 Series Owner's Guide and quick start guide.",
+        minLiquidML: 177,
+        maxFillML: 473
     )
 }
