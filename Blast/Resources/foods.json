@@ -1,0 +1,5108 @@
+[
+ {
+  "id": "banana",
+  "name": "Banana",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 89,
+   "protein": 1.1,
+   "carbs": 22.8,
+   "fiber": 2.6,
+   "sugar": 12.2,
+   "fat": 0.3
+  },
+  "gramsPerCup": 150,
+  "gramsPerPiece": 118,
+  "pieceName": "medium banana",
+  "isLiquid": false,
+  "mlPerGram": 1.5773,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "banana_frozen",
+  "name": "Frozen banana slices",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 89,
+   "protein": 1.1,
+   "carbs": 22.8,
+   "fiber": 2.6,
+   "sugar": 12.2,
+   "fat": 0.3
+  },
+  "gramsPerCup": 150,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5773,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "strawberry",
+  "name": "Strawberries",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 32,
+   "protein": 0.7,
+   "carbs": 7.7,
+   "fiber": 2.0,
+   "sugar": 4.9,
+   "fat": 0.3
+  },
+  "gramsPerCup": 144,
+  "gramsPerPiece": 12,
+  "pieceName": "berry",
+  "isLiquid": false,
+  "mlPerGram": 1.643,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "strawberry_frozen",
+  "name": "Frozen strawberries",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 35,
+   "protein": 0.7,
+   "carbs": 8.4,
+   "fiber": 2.1,
+   "sugar": 5.2,
+   "fat": 0.2
+  },
+  "gramsPerCup": 145,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6316,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "blueberry",
+  "name": "Blueberries",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 57,
+   "protein": 0.7,
+   "carbs": 14.5,
+   "fiber": 2.4,
+   "sugar": 10.0,
+   "fat": 0.3
+  },
+  "gramsPerCup": 148,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5986,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "blueberry_frozen",
+  "name": "Frozen blueberries",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 51,
+   "protein": 0.4,
+   "carbs": 12.2,
+   "fiber": 2.7,
+   "sugar": 8.5,
+   "fat": 0.6
+  },
+  "gramsPerCup": 155,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5264,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "raspberry",
+  "name": "Raspberries",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 52,
+   "protein": 1.2,
+   "carbs": 11.9,
+   "fiber": 6.5,
+   "sugar": 4.4,
+   "fat": 0.7
+  },
+  "gramsPerCup": 123,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.9235,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "blackberry",
+  "name": "Blackberries",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 43,
+   "protein": 1.4,
+   "carbs": 9.6,
+   "fiber": 5.3,
+   "sugar": 4.9,
+   "fat": 0.5
+  },
+  "gramsPerCup": 144,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.643,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "berries_mixed_frozen",
+  "name": "Mixed frozen berries",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 50,
+   "protein": 1.0,
+   "carbs": 12.0,
+   "fiber": 3.5,
+   "sugar": 7.0,
+   "fat": 0.4
+  },
+  "gramsPerCup": 140,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6899,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cherry",
+  "name": "Sweet cherries",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 63,
+   "protein": 1.1,
+   "carbs": 16.0,
+   "fiber": 2.1,
+   "sugar": 12.8,
+   "fat": 0.2
+  },
+  "gramsPerCup": 154,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5363,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cherry_frozen",
+  "name": "Frozen dark cherries",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 60,
+   "protein": 1.0,
+   "carbs": 15.0,
+   "fiber": 2.0,
+   "sugar": 12.5,
+   "fat": 0.3
+  },
+  "gramsPerCup": 140,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6899,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cranberry_frozen",
+  "name": "Frozen cranberries",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 46,
+   "protein": 0.4,
+   "carbs": 12.2,
+   "fiber": 4.6,
+   "sugar": 4.0,
+   "fat": 0.1
+  },
+  "gramsPerCup": 110,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.1508,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "mango",
+  "name": "Mango",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 60,
+   "protein": 0.8,
+   "carbs": 15.0,
+   "fiber": 1.6,
+   "sugar": 13.7,
+   "fat": 0.4
+  },
+  "gramsPerCup": 165,
+  "gramsPerPiece": 200,
+  "pieceName": "medium mango",
+  "isLiquid": false,
+  "mlPerGram": 1.4339,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "mango_frozen",
+  "name": "Frozen mango chunks",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 60,
+   "protein": 0.8,
+   "carbs": 15.0,
+   "fiber": 1.6,
+   "sugar": 13.7,
+   "fat": 0.4
+  },
+  "gramsPerCup": 165,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.4339,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pineapple",
+  "name": "Pineapple",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 50,
+   "protein": 0.5,
+   "carbs": 13.1,
+   "fiber": 1.4,
+   "sugar": 9.9,
+   "fat": 0.1
+  },
+  "gramsPerCup": 165,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.4339,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pineapple_frozen",
+  "name": "Frozen pineapple chunks",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 50,
+   "protein": 0.5,
+   "carbs": 13.1,
+   "fiber": 1.4,
+   "sugar": 9.9,
+   "fat": 0.1
+  },
+  "gramsPerCup": 165,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.4339,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "peach",
+  "name": "Peach",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 39,
+   "protein": 0.9,
+   "carbs": 9.5,
+   "fiber": 1.5,
+   "sugar": 8.4,
+   "fat": 0.3
+  },
+  "gramsPerCup": 154,
+  "gramsPerPiece": 150,
+  "pieceName": "medium peach",
+  "isLiquid": false,
+  "mlPerGram": 1.5363,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "peach_frozen",
+  "name": "Frozen peach slices",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 40,
+   "protein": 0.9,
+   "carbs": 9.6,
+   "fiber": 1.6,
+   "sugar": 8.5,
+   "fat": 0.2
+  },
+  "gramsPerCup": 155,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5264,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pear",
+  "name": "Pear",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 57,
+   "protein": 0.4,
+   "carbs": 15.2,
+   "fiber": 3.1,
+   "sugar": 9.8,
+   "fat": 0.1
+  },
+  "gramsPerCup": 140,
+  "gramsPerPiece": 178,
+  "pieceName": "medium pear",
+  "isLiquid": false,
+  "mlPerGram": 1.6899,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "apple",
+  "name": "Apple",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 52,
+   "protein": 0.3,
+   "carbs": 13.8,
+   "fiber": 2.4,
+   "sugar": 10.4,
+   "fat": 0.2
+  },
+  "gramsPerCup": 125,
+  "gramsPerPiece": 182,
+  "pieceName": "medium apple",
+  "isLiquid": false,
+  "mlPerGram": 1.8927,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "apple_green",
+  "name": "Green apple",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 52,
+   "protein": 0.3,
+   "carbs": 13.8,
+   "fiber": 2.4,
+   "sugar": 10.4,
+   "fat": 0.2
+  },
+  "gramsPerCup": 125,
+  "gramsPerPiece": 182,
+  "pieceName": "medium apple",
+  "isLiquid": false,
+  "mlPerGram": 1.8927,
+  "defaultUnit": "piece",
+  "aliases": [
+   "granny smith"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "applesauce",
+  "name": "Unsweetened applesauce",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 42,
+   "protein": 0.2,
+   "carbs": 11.3,
+   "fiber": 1.1,
+   "sugar": 9.4,
+   "fat": 0.1
+  },
+  "gramsPerCup": 244,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9696,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "orange",
+  "name": "Orange",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 47,
+   "protein": 0.9,
+   "carbs": 11.8,
+   "fiber": 2.4,
+   "sugar": 9.4,
+   "fat": 0.1
+  },
+  "gramsPerCup": 180,
+  "gramsPerPiece": 131,
+  "pieceName": "medium orange",
+  "isLiquid": false,
+  "mlPerGram": 1.3144,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "clementine",
+  "name": "Clementine",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 47,
+   "protein": 0.9,
+   "carbs": 12.0,
+   "fiber": 1.7,
+   "sugar": 9.2,
+   "fat": 0.2
+  },
+  "gramsPerCup": 180,
+  "gramsPerPiece": 74,
+  "pieceName": "clementine",
+  "isLiquid": false,
+  "mlPerGram": 1.3144,
+  "defaultUnit": "piece",
+  "aliases": [
+   "mandarin"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "grapefruit",
+  "name": "Grapefruit",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 42,
+   "protein": 0.8,
+   "carbs": 10.7,
+   "fiber": 1.6,
+   "sugar": 6.9,
+   "fat": 0.1
+  },
+  "gramsPerCup": 230,
+  "gramsPerPiece": 246,
+  "pieceName": "whole grapefruit",
+  "isLiquid": false,
+  "mlPerGram": 1.0286,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "kiwi",
+  "name": "Kiwi",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 61,
+   "protein": 1.1,
+   "carbs": 14.7,
+   "fiber": 3.0,
+   "sugar": 9.0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 177,
+  "gramsPerPiece": 69,
+  "pieceName": "kiwi",
+  "isLiquid": false,
+  "mlPerGram": 1.3367,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "watermelon",
+  "name": "Watermelon",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 30,
+   "protein": 0.6,
+   "carbs": 7.6,
+   "fiber": 0.4,
+   "sugar": 6.2,
+   "fat": 0.2
+  },
+  "gramsPerCup": 152,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5565,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cantaloupe",
+  "name": "Cantaloupe",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 34,
+   "protein": 0.8,
+   "carbs": 8.2,
+   "fiber": 0.9,
+   "sugar": 7.9,
+   "fat": 0.2
+  },
+  "gramsPerCup": 160,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.4787,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "honeydew",
+  "name": "Honeydew melon",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 36,
+   "protein": 0.5,
+   "carbs": 9.1,
+   "fiber": 0.8,
+   "sugar": 8.1,
+   "fat": 0.1
+  },
+  "gramsPerCup": 170,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.3917,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "grapes",
+  "name": "Grapes",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 69,
+   "protein": 0.7,
+   "carbs": 18.1,
+   "fiber": 0.9,
+   "sugar": 15.5,
+   "fat": 0.2
+  },
+  "gramsPerCup": 151,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5668,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "avocado",
+  "name": "Avocado",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 160,
+   "protein": 2.0,
+   "carbs": 8.5,
+   "fiber": 6.7,
+   "sugar": 0.7,
+   "fat": 14.7
+  },
+  "gramsPerCup": 150,
+  "gramsPerPiece": 150,
+  "pieceName": "medium avocado",
+  "isLiquid": false,
+  "mlPerGram": 1.5773,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "papaya",
+  "name": "Papaya",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 43,
+   "protein": 0.5,
+   "carbs": 10.8,
+   "fiber": 1.7,
+   "sugar": 7.8,
+   "fat": 0.3
+  },
+  "gramsPerCup": 145,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6316,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "guava",
+  "name": "Guava",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 68,
+   "protein": 2.6,
+   "carbs": 14.3,
+   "fiber": 5.4,
+   "sugar": 8.9,
+   "fat": 1.0
+  },
+  "gramsPerCup": 165,
+  "gramsPerPiece": 55,
+  "pieceName": "guava",
+  "isLiquid": false,
+  "mlPerGram": 1.4339,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "passionfruit",
+  "name": "Passion fruit",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 97,
+   "protein": 2.2,
+   "carbs": 23.4,
+   "fiber": 10.4,
+   "sugar": 11.2,
+   "fat": 0.7
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": 18,
+  "pieceName": "passion fruit",
+  "isLiquid": false,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "dragonfruit",
+  "name": "Dragon fruit",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 60,
+   "protein": 1.2,
+   "carbs": 13.0,
+   "fiber": 3.0,
+   "sugar": 8.0,
+   "fat": 0.4
+  },
+  "gramsPerCup": 227,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0422,
+  "defaultUnit": "cup",
+  "aliases": [
+   "pitaya"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pomegranate_arils",
+  "name": "Pomegranate arils",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 83,
+   "protein": 1.7,
+   "carbs": 18.7,
+   "fiber": 4.0,
+   "sugar": 13.7,
+   "fat": 1.2
+  },
+  "gramsPerCup": 174,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.3597,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "fig",
+  "name": "Fresh fig",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 74,
+   "protein": 0.8,
+   "carbs": 19.2,
+   "fiber": 2.9,
+   "sugar": 16.3,
+   "fat": 0.3
+  },
+  "gramsPerCup": 149,
+  "gramsPerPiece": 50,
+  "pieceName": "fig",
+  "isLiquid": false,
+  "mlPerGram": 1.5878,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "date",
+  "name": "Medjool date",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 277,
+   "protein": 1.8,
+   "carbs": 75.0,
+   "fiber": 6.7,
+   "sugar": 66.5,
+   "fat": 0.2
+  },
+  "gramsPerCup": 178,
+  "gramsPerPiece": 24,
+  "pieceName": "date",
+  "isLiquid": false,
+  "mlPerGram": 1.3291,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "raisin",
+  "name": "Raisins",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 299,
+   "protein": 3.1,
+   "carbs": 79.2,
+   "fiber": 3.7,
+   "sugar": 59.2,
+   "fat": 0.5
+  },
+  "gramsPerCup": 145,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6316,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "apricot_dried",
+  "name": "Dried apricots",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 241,
+   "protein": 3.4,
+   "carbs": 62.6,
+   "fiber": 7.3,
+   "sugar": 53.4,
+   "fat": 0.5
+  },
+  "gramsPerCup": 130,
+  "gramsPerPiece": 8,
+  "pieceName": "half",
+  "isLiquid": false,
+  "mlPerGram": 1.8199,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "prune",
+  "name": "Prunes",
+  "category": "fruit",
+  "per100g": {
+   "kcal": 240,
+   "protein": 2.2,
+   "carbs": 63.9,
+   "fiber": 7.1,
+   "sugar": 38.1,
+   "fat": 0.4
+  },
+  "gramsPerCup": 174,
+  "gramsPerPiece": 9,
+  "pieceName": "prune",
+  "isLiquid": false,
+  "mlPerGram": 1.3597,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "acai_puree",
+  "name": "Unsweetened acai puree",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 70,
+   "protein": 1.0,
+   "carbs": 4.0,
+   "fiber": 2.0,
+   "sugar": 1.0,
+   "fat": 5.0
+  },
+  "gramsPerCup": 200,
+  "gramsPerPiece": 100,
+  "pieceName": "frozen pack",
+  "isLiquid": false,
+  "mlPerGram": 1.1829,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_shredded",
+  "name": "Unsweetened shredded coconut",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 660,
+   "protein": 6.9,
+   "carbs": 23.7,
+   "fiber": 16.3,
+   "sugar": 7.4,
+   "fat": 64.5
+  },
+  "gramsPerCup": 80,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.9573,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "spinach",
+  "name": "Spinach",
+  "category": "greens",
+  "per100g": {
+   "kcal": 23,
+   "protein": 2.9,
+   "carbs": 3.6,
+   "fiber": 2.2,
+   "sugar": 0.4,
+   "fat": 0.4
+  },
+  "gramsPerCup": 30,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 7.8863,
+  "defaultUnit": "cup",
+  "aliases": [
+   "baby spinach"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "kale",
+  "name": "Kale",
+  "category": "greens",
+  "per100g": {
+   "kcal": 49,
+   "protein": 4.3,
+   "carbs": 8.8,
+   "fiber": 3.6,
+   "sugar": 2.3,
+   "fat": 0.9
+  },
+  "gramsPerCup": 40,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 5.9147,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "romaine",
+  "name": "Romaine lettuce",
+  "category": "greens",
+  "per100g": {
+   "kcal": 17,
+   "protein": 1.2,
+   "carbs": 3.3,
+   "fiber": 2.1,
+   "sugar": 1.2,
+   "fat": 0.3
+  },
+  "gramsPerCup": 47,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 5.0338,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "chard",
+  "name": "Swiss chard",
+  "category": "greens",
+  "per100g": {
+   "kcal": 19,
+   "protein": 1.8,
+   "carbs": 3.7,
+   "fiber": 1.6,
+   "sugar": 1.1,
+   "fat": 0.2
+  },
+  "gramsPerCup": 36,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 6.5719,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "arugula",
+  "name": "Arugula",
+  "category": "greens",
+  "per100g": {
+   "kcal": 25,
+   "protein": 2.6,
+   "carbs": 3.7,
+   "fiber": 1.6,
+   "sugar": 2.1,
+   "fat": 0.7
+  },
+  "gramsPerCup": 20,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 11.8294,
+  "defaultUnit": "cup",
+  "aliases": [
+   "rocket"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "mint",
+  "name": "Fresh mint",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 70,
+   "protein": 3.8,
+   "carbs": 14.9,
+   "fiber": 8.0,
+   "sugar": 0.0,
+   "fat": 0.9
+  },
+  "gramsPerCup": 32,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 7.3934,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "basil",
+  "name": "Fresh basil",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 23,
+   "protein": 3.2,
+   "carbs": 2.6,
+   "fiber": 1.6,
+   "sugar": 0.3,
+   "fat": 0.6
+  },
+  "gramsPerCup": 24,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 9.8578,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cilantro",
+  "name": "Cilantro",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 23,
+   "protein": 2.1,
+   "carbs": 3.7,
+   "fiber": 2.8,
+   "sugar": 0.9,
+   "fat": 0.5
+  },
+  "gramsPerCup": 16,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 14.7867,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "coriander"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "parsley",
+  "name": "Parsley",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 36,
+   "protein": 3.0,
+   "carbs": 6.3,
+   "fiber": 3.3,
+   "sugar": 0.9,
+   "fat": 0.8
+  },
+  "gramsPerCup": 60,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 3.9431,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "celery",
+  "name": "Celery",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 16,
+   "protein": 0.7,
+   "carbs": 3.0,
+   "fiber": 1.6,
+   "sugar": 1.3,
+   "fat": 0.2
+  },
+  "gramsPerCup": 101,
+  "gramsPerPiece": 40,
+  "pieceName": "stalk",
+  "isLiquid": false,
+  "mlPerGram": 2.3425,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cucumber",
+  "name": "Cucumber",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 15,
+   "protein": 0.7,
+   "carbs": 3.6,
+   "fiber": 0.5,
+   "sugar": 1.7,
+   "fat": 0.1
+  },
+  "gramsPerCup": 119,
+  "gramsPerPiece": 300,
+  "pieceName": "cucumber",
+  "isLiquid": false,
+  "mlPerGram": 1.9881,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "carrot",
+  "name": "Carrot",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 41,
+   "protein": 0.9,
+   "carbs": 9.6,
+   "fiber": 2.8,
+   "sugar": 4.7,
+   "fat": 0.2
+  },
+  "gramsPerCup": 128,
+  "gramsPerPiece": 61,
+  "pieceName": "medium carrot",
+  "isLiquid": false,
+  "mlPerGram": 1.8483,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "beet",
+  "name": "Cooked beets",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 44,
+   "protein": 1.7,
+   "carbs": 10.0,
+   "fiber": 2.0,
+   "sugar": 6.8,
+   "fat": 0.2
+  },
+  "gramsPerCup": 136,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.7396,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pumpkin_puree",
+  "name": "Pumpkin puree",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 34,
+   "protein": 1.1,
+   "carbs": 8.1,
+   "fiber": 2.9,
+   "sugar": 3.3,
+   "fat": 0.3
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "sweet_potato",
+  "name": "Cooked sweet potato",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 90,
+   "protein": 2.0,
+   "carbs": 20.7,
+   "fiber": 3.3,
+   "sugar": 6.5,
+   "fat": 0.2
+  },
+  "gramsPerCup": 200,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.1829,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "zucchini",
+  "name": "Zucchini",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 17,
+   "protein": 1.2,
+   "carbs": 3.1,
+   "fiber": 1.0,
+   "sugar": 2.5,
+   "fat": 0.3
+  },
+  "gramsPerCup": 124,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.908,
+  "defaultUnit": "cup",
+  "aliases": [
+   "courgette"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cauliflower_frozen",
+  "name": "Frozen riced cauliflower",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 25,
+   "protein": 1.9,
+   "carbs": 5.0,
+   "fiber": 2.0,
+   "sugar": 1.9,
+   "fat": 0.3
+  },
+  "gramsPerCup": 107,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.2111,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "tomato",
+  "name": "Tomato",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 18,
+   "protein": 0.9,
+   "carbs": 3.9,
+   "fiber": 1.2,
+   "sugar": 2.6,
+   "fat": 0.2
+  },
+  "gramsPerCup": 180,
+  "gramsPerPiece": 123,
+  "pieceName": "medium tomato",
+  "isLiquid": false,
+  "mlPerGram": 1.3144,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "bell_pepper",
+  "name": "Red bell pepper",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 31,
+   "protein": 1.0,
+   "carbs": 6.0,
+   "fiber": 2.1,
+   "sugar": 4.2,
+   "fat": 0.3
+  },
+  "gramsPerCup": 149,
+  "gramsPerPiece": 119,
+  "pieceName": "pepper",
+  "isLiquid": false,
+  "mlPerGram": 1.5878,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "jalapeno",
+  "name": "Jalapeño",
+  "category": "vegetable",
+  "per100g": {
+   "kcal": 29,
+   "protein": 0.9,
+   "carbs": 6.5,
+   "fiber": 2.8,
+   "sugar": 4.1,
+   "fat": 0.4
+  },
+  "gramsPerCup": 90,
+  "gramsPerPiece": 14,
+  "pieceName": "pepper",
+  "isLiquid": false,
+  "mlPerGram": 2.6288,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "ginger",
+  "name": "Fresh ginger",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 80,
+   "protein": 1.8,
+   "carbs": 17.8,
+   "fiber": 2.0,
+   "sugar": 1.7,
+   "fat": 0.8
+  },
+  "gramsPerCup": 96,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.4645,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "garlic",
+  "name": "Garlic",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 149,
+   "protein": 6.4,
+   "carbs": 33.1,
+   "fiber": 2.1,
+   "sugar": 1.0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 136,
+  "gramsPerPiece": 3,
+  "pieceName": "clove",
+  "isLiquid": false,
+  "mlPerGram": 1.7396,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "peas_frozen",
+  "name": "Frozen peas",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 81,
+   "protein": 5.4,
+   "carbs": 14.5,
+   "fiber": 5.1,
+   "sugar": 5.7,
+   "fat": 0.4
+  },
+  "gramsPerCup": 134,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.7656,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "water",
+  "name": "Water",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 0,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "ice",
+  "name": "Ice",
+  "category": "frozen",
+  "per100g": {
+   "kcal": 0,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 120,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.9716,
+  "defaultUnit": "cup",
+  "aliases": [
+   "ice cubes"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "milk_whole",
+  "name": "Whole milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 61,
+   "protein": 3.2,
+   "carbs": 4.8,
+   "fiber": 0,
+   "sugar": 5.1,
+   "fat": 3.3
+  },
+  "gramsPerCup": 244,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9696,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "milk_2",
+  "name": "2% milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 50,
+   "protein": 3.3,
+   "carbs": 4.9,
+   "fiber": 0,
+   "sugar": 5.0,
+   "fat": 2.0
+  },
+  "gramsPerCup": 244,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9696,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "milk_skim",
+  "name": "Skim milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 34,
+   "protein": 3.4,
+   "carbs": 5.0,
+   "fiber": 0,
+   "sugar": 5.0,
+   "fat": 0.2
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "almond_milk",
+  "name": "Unsweetened almond milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 15,
+   "protein": 0.6,
+   "carbs": 0.6,
+   "fiber": 0.3,
+   "sugar": 0,
+   "fat": 1.2
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "almond_milk_vanilla",
+  "name": "Vanilla almond milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 38,
+   "protein": 0.4,
+   "carbs": 6.3,
+   "fiber": 0.3,
+   "sugar": 6.0,
+   "fat": 1.1
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "oat_milk",
+  "name": "Oat milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 48,
+   "protein": 1.3,
+   "carbs": 7.0,
+   "fiber": 0.8,
+   "sugar": 3.5,
+   "fat": 1.5
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "soy_milk",
+  "name": "Unsweetened soy milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 33,
+   "protein": 3.3,
+   "carbs": 1.8,
+   "fiber": 0.6,
+   "sugar": 0.9,
+   "fat": 1.8
+  },
+  "gramsPerCup": 243,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9736,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_milk_bev",
+  "name": "Coconut milk beverage",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 20,
+   "protein": 0.2,
+   "carbs": 1.0,
+   "fiber": 0,
+   "sugar": 1.0,
+   "fat": 1.8
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_milk_canned",
+  "name": "Canned coconut milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 197,
+   "protein": 2.0,
+   "carbs": 2.8,
+   "fiber": 0,
+   "sugar": 1.6,
+   "fat": 21.3
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_cream",
+  "name": "Coconut cream",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 330,
+   "protein": 3.6,
+   "carbs": 6.7,
+   "fiber": 2.2,
+   "sugar": 4.9,
+   "fat": 34.7
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cashew_milk",
+  "name": "Unsweetened cashew milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 10,
+   "protein": 0.4,
+   "carbs": 1.0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0.9
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "rice_milk",
+  "name": "Rice milk",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 47,
+   "protein": 0.3,
+   "carbs": 9.2,
+   "fiber": 0.3,
+   "sugar": 5.3,
+   "fat": 1.0
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "kefir",
+  "name": "Plain kefir",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 41,
+   "protein": 3.8,
+   "carbs": 4.6,
+   "fiber": 0,
+   "sugar": 4.6,
+   "fat": 1.0
+  },
+  "gramsPerCup": 243,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9736,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "orange_juice",
+  "name": "Orange juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 45,
+   "protein": 0.7,
+   "carbs": 10.4,
+   "fiber": 0.2,
+   "sugar": 8.4,
+   "fat": 0.2
+  },
+  "gramsPerCup": 248,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.954,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "apple_juice",
+  "name": "Apple juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 46,
+   "protein": 0.1,
+   "carbs": 11.3,
+   "fiber": 0.2,
+   "sugar": 9.6,
+   "fat": 0.1
+  },
+  "gramsPerCup": 248,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.954,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "carrot_juice",
+  "name": "Carrot juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 40,
+   "protein": 0.9,
+   "carbs": 9.3,
+   "fiber": 0.8,
+   "sugar": 3.9,
+   "fat": 0.2
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pomegranate_juice",
+  "name": "Pomegranate juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 54,
+   "protein": 0.2,
+   "carbs": 13.1,
+   "fiber": 0.1,
+   "sugar": 12.7,
+   "fat": 0.3
+  },
+  "gramsPerCup": 249,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9502,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cranberry_juice",
+  "name": "Cranberry juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 46,
+   "protein": 0.4,
+   "carbs": 12.0,
+   "fiber": 0.1,
+   "sugar": 12.0,
+   "fat": 0.1
+  },
+  "gramsPerCup": 253,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9351,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cherry_juice",
+  "name": "Tart cherry juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 50,
+   "protein": 0.3,
+   "carbs": 12.4,
+   "fiber": 0,
+   "sugar": 11.0,
+   "fat": 0.1
+  },
+  "gramsPerCup": 248,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.954,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pineapple_juice",
+  "name": "Pineapple juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 53,
+   "protein": 0.4,
+   "carbs": 12.9,
+   "fiber": 0.2,
+   "sugar": 9.9,
+   "fat": 0.1
+  },
+  "gramsPerCup": 250,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9464,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "lemon_juice",
+  "name": "Lemon juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 22,
+   "protein": 0.4,
+   "carbs": 6.9,
+   "fiber": 0.3,
+   "sugar": 2.5,
+   "fat": 0.2
+  },
+  "gramsPerCup": 244,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9696,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "lime_juice",
+  "name": "Lime juice",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 25,
+   "protein": 0.4,
+   "carbs": 8.4,
+   "fiber": 0.4,
+   "sugar": 1.7,
+   "fat": 0.1
+  },
+  "gramsPerCup": 242,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9776,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_water",
+  "name": "Coconut water",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 19,
+   "protein": 0.7,
+   "carbs": 3.7,
+   "fiber": 1.1,
+   "sugar": 2.6,
+   "fat": 0.2
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coffee",
+  "name": "Brewed coffee",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 1,
+   "protein": 0.1,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 237,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9983,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cold_brew",
+  "name": "Cold brew concentrate",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 8,
+   "protein": 0.3,
+   "carbs": 1.4,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 237,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9983,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "espresso",
+  "name": "Espresso",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 9,
+   "protein": 0.1,
+   "carbs": 1.7,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0.2
+  },
+  "gramsPerCup": 237,
+  "gramsPerPiece": 30,
+  "pieceName": "shot",
+  "isLiquid": true,
+  "mlPerGram": 0.9983,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "green_tea",
+  "name": "Brewed green tea",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 1,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 237,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9983,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "chai_concentrate",
+  "name": "Chai concentrate",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 60,
+   "protein": 1.0,
+   "carbs": 13.0,
+   "fiber": 0,
+   "sugar": 12.0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "kombucha",
+  "name": "Kombucha",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 30,
+   "protein": 0,
+   "carbs": 7.0,
+   "fiber": 0,
+   "sugar": 6.0,
+   "fat": 0
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "limeade_frozen",
+  "name": "Frozen limeade concentrate",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 128,
+   "protein": 0.1,
+   "carbs": 34.0,
+   "fiber": 0.3,
+   "sugar": 31.0,
+   "fat": 0.1
+  },
+  "gramsPerCup": 246,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9617,
+  "defaultUnit": "cup",
+  "aliases": [
+   "lime cocktail mixer"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "lemonade_frozen",
+  "name": "Frozen lemonade concentrate",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 128,
+   "protein": 0.2,
+   "carbs": 33.5,
+   "fiber": 0.3,
+   "sugar": 31.0,
+   "fat": 0.1
+  },
+  "gramsPerCup": 246,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9617,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "greek_yogurt_nonfat",
+  "name": "Nonfat Greek yogurt",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 59,
+   "protein": 10.2,
+   "carbs": 3.6,
+   "fiber": 0,
+   "sugar": 3.2,
+   "fat": 0.4
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "greek_yogurt_whole",
+  "name": "Whole-milk Greek yogurt",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 97,
+   "protein": 9.0,
+   "carbs": 3.9,
+   "fiber": 0,
+   "sugar": 3.6,
+   "fat": 5.0
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "yogurt_plain",
+  "name": "Plain whole-milk yogurt",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 61,
+   "protein": 3.5,
+   "carbs": 4.7,
+   "fiber": 0,
+   "sugar": 4.7,
+   "fat": 3.3
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "yogurt_vanilla",
+  "name": "Vanilla whole-milk yogurt",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 96,
+   "protein": 3.5,
+   "carbs": 15.7,
+   "fiber": 0,
+   "sugar": 15.6,
+   "fat": 2.6
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "skyr",
+  "name": "Skyr",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 63,
+   "protein": 11.0,
+   "carbs": 4.0,
+   "fiber": 0,
+   "sugar": 4.0,
+   "fat": 0.2
+  },
+  "gramsPerCup": 245,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9657,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cottage_cheese",
+  "name": "Cottage cheese",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 98,
+   "protein": 11.1,
+   "carbs": 3.4,
+   "fiber": 0,
+   "sugar": 2.7,
+   "fat": 4.3
+  },
+  "gramsPerCup": 226,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0468,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cream_cheese",
+  "name": "Cream cheese",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 350,
+   "protein": 6.2,
+   "carbs": 5.5,
+   "fiber": 0,
+   "sugar": 3.2,
+   "fat": 34.4
+  },
+  "gramsPerCup": 232,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0198,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "sour_cream",
+  "name": "Sour cream",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 198,
+   "protein": 2.4,
+   "carbs": 4.6,
+   "fiber": 0,
+   "sugar": 3.5,
+   "fat": 19.4
+  },
+  "gramsPerCup": 230,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0286,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "heavy_cream",
+  "name": "Heavy cream",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 340,
+   "protein": 2.8,
+   "carbs": 2.8,
+   "fiber": 0,
+   "sugar": 2.9,
+   "fat": 36.0
+  },
+  "gramsPerCup": 238,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9941,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "half_and_half",
+  "name": "Half and half",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 130,
+   "protein": 3.0,
+   "carbs": 4.3,
+   "fiber": 0,
+   "sugar": 4.3,
+   "fat": 11.5
+  },
+  "gramsPerCup": 242,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9776,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "condensed_milk",
+  "name": "Sweetened condensed milk",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 321,
+   "protein": 7.9,
+   "carbs": 54.4,
+   "fiber": 0,
+   "sugar": 54.4,
+   "fat": 8.7
+  },
+  "gramsPerCup": 306,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.7732,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "feta",
+  "name": "Feta cheese",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 264,
+   "protein": 14.2,
+   "carbs": 4.1,
+   "fiber": 0,
+   "sugar": 4.1,
+   "fat": 21.3
+  },
+  "gramsPerCup": 150,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.5773,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "ice_cream",
+  "name": "Vanilla ice cream",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 207,
+   "protein": 3.5,
+   "carbs": 23.6,
+   "fiber": 0.7,
+   "sugar": 21.2,
+   "fat": 11.0
+  },
+  "gramsPerCup": 132,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.7923,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "frozen_yogurt",
+  "name": "Frozen yogurt",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 159,
+   "protein": 4.0,
+   "carbs": 24.2,
+   "fiber": 0,
+   "sugar": 24.0,
+   "fat": 4.0
+  },
+  "gramsPerCup": 174,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.3597,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "whipped_cream",
+  "name": "Whipped cream",
+  "category": "dairy",
+  "per100g": {
+   "kcal": 257,
+   "protein": 3.2,
+   "carbs": 12.5,
+   "fiber": 0,
+   "sugar": 12.5,
+   "fat": 22.2
+  },
+  "gramsPerCup": 60,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 3.9431,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "whey_vanilla",
+  "name": "Vanilla whey protein",
+  "category": "protein",
+  "per100g": {
+   "kcal": 400,
+   "protein": 80.0,
+   "carbs": 10.0,
+   "fiber": 1.0,
+   "sugar": 4.0,
+   "fat": 4.0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 30,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "whey_chocolate",
+  "name": "Chocolate whey protein",
+  "category": "protein",
+  "per100g": {
+   "kcal": 390,
+   "protein": 75.0,
+   "carbs": 12.0,
+   "fiber": 2.0,
+   "sugar": 5.0,
+   "fat": 5.0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 32,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "whey_unflavored",
+  "name": "Unflavored whey protein",
+  "category": "protein",
+  "per100g": {
+   "kcal": 400,
+   "protein": 82.0,
+   "carbs": 8.0,
+   "fiber": 0.5,
+   "sugar": 2.0,
+   "fat": 4.0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 30,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "plant_protein",
+  "name": "Plant protein powder",
+  "category": "protein",
+  "per100g": {
+   "kcal": 380,
+   "protein": 70.0,
+   "carbs": 12.0,
+   "fiber": 6.0,
+   "sugar": 2.0,
+   "fat": 6.0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 33,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "collagen",
+  "name": "Collagen peptides",
+  "category": "protein",
+  "per100g": {
+   "kcal": 360,
+   "protein": 90.0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 20,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "casein",
+  "name": "Casein protein",
+  "category": "protein",
+  "per100g": {
+   "kcal": 370,
+   "protein": 75.0,
+   "carbs": 9.0,
+   "fiber": 1.0,
+   "sugar": 3.0,
+   "fat": 3.0
+  },
+  "gramsPerCup": null,
+  "gramsPerPiece": 33,
+  "pieceName": "scoop",
+  "isLiquid": false,
+  "mlPerGram": 1.0,
+  "defaultUnit": "piece",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": true,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "egg_white",
+  "name": "Pasteurized egg whites",
+  "category": "protein",
+  "per100g": {
+   "kcal": 52,
+   "protein": 10.9,
+   "carbs": 0.7,
+   "fiber": 0,
+   "sugar": 0.7,
+   "fat": 0.2
+  },
+  "gramsPerCup": 243,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9736,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "silken_tofu",
+  "name": "Silken tofu",
+  "category": "protein",
+  "per100g": {
+   "kcal": 55,
+   "protein": 5.7,
+   "carbs": 1.9,
+   "fiber": 0.2,
+   "sugar": 0.6,
+   "fat": 2.7
+  },
+  "gramsPerCup": 248,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.954,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "peanut_powder",
+  "name": "Powdered peanut butter",
+  "category": "protein",
+  "per100g": {
+   "kcal": 400,
+   "protein": 50.0,
+   "carbs": 30.0,
+   "fiber": 15.0,
+   "sugar": 10.0,
+   "fat": 11.0
+  },
+  "gramsPerCup": 90,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.6288,
+  "defaultUnit": "cup",
+  "aliases": [
+   "pb2"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "peanut_butter",
+  "name": "Peanut butter",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 588,
+   "protein": 25.0,
+   "carbs": 20.0,
+   "fiber": 6.0,
+   "sugar": 9.0,
+   "fat": 50.0
+  },
+  "gramsPerCup": 258,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.917,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "pb"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "almond_butter",
+  "name": "Almond butter",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 614,
+   "protein": 21.0,
+   "carbs": 18.8,
+   "fiber": 10.3,
+   "sugar": 4.4,
+   "fat": 55.5
+  },
+  "gramsPerCup": 256,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9242,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cashew_butter",
+  "name": "Cashew butter",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 587,
+   "protein": 17.6,
+   "carbs": 27.6,
+   "fiber": 2.0,
+   "sugar": 5.0,
+   "fat": 49.4
+  },
+  "gramsPerCup": 256,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9242,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "sunflower_butter",
+  "name": "Sunflower seed butter",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 617,
+   "protein": 17.3,
+   "carbs": 23.3,
+   "fiber": 5.6,
+   "sugar": 10.0,
+   "fat": 55.2
+  },
+  "gramsPerCup": 256,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9242,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "tahini",
+  "name": "Tahini",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 595,
+   "protein": 17.0,
+   "carbs": 21.2,
+   "fiber": 9.3,
+   "sugar": 0.5,
+   "fat": 53.8
+  },
+  "gramsPerCup": 240,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9858,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "choc_hazelnut",
+  "name": "Chocolate hazelnut spread",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 539,
+   "protein": 6.3,
+   "carbs": 57.9,
+   "fiber": 5.4,
+   "sugar": 52.4,
+   "fat": 30.9
+  },
+  "gramsPerCup": 300,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.7886,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "nutella"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "almonds",
+  "name": "Almonds",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 579,
+   "protein": 21.2,
+   "carbs": 21.6,
+   "fiber": 12.5,
+   "sugar": 4.4,
+   "fat": 49.9
+  },
+  "gramsPerCup": 143,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6545,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "walnuts",
+  "name": "Walnuts",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 654,
+   "protein": 15.2,
+   "carbs": 13.7,
+   "fiber": 6.7,
+   "sugar": 2.6,
+   "fat": 65.2
+  },
+  "gramsPerCup": 117,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.0221,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cashews",
+  "name": "Cashews",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 553,
+   "protein": 18.2,
+   "carbs": 30.2,
+   "fiber": 3.3,
+   "sugar": 5.9,
+   "fat": 43.8
+  },
+  "gramsPerCup": 137,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.7269,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pecans",
+  "name": "Pecans",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 691,
+   "protein": 9.2,
+   "carbs": 13.9,
+   "fiber": 9.6,
+   "sugar": 4.0,
+   "fat": 72.0
+  },
+  "gramsPerCup": 109,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.1705,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pistachios",
+  "name": "Pistachios",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 560,
+   "protein": 20.2,
+   "carbs": 27.2,
+   "fiber": 10.6,
+   "sugar": 7.7,
+   "fat": 45.3
+  },
+  "gramsPerCup": 123,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.9235,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "hemp_hearts",
+  "name": "Hemp hearts",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 553,
+   "protein": 31.6,
+   "carbs": 8.7,
+   "fiber": 4.0,
+   "sugar": 1.5,
+   "fat": 48.8
+  },
+  "gramsPerCup": 160,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.4787,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "chia",
+  "name": "Chia seeds",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 486,
+   "protein": 16.5,
+   "carbs": 42.1,
+   "fiber": 34.4,
+   "sugar": 0,
+   "fat": 30.7
+  },
+  "gramsPerCup": 192,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.2322,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "flax",
+  "name": "Ground flaxseed",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 534,
+   "protein": 18.3,
+   "carbs": 28.9,
+   "fiber": 27.3,
+   "sugar": 1.6,
+   "fat": 42.2
+  },
+  "gramsPerCup": 112,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.1124,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "linseed"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "pumpkin_seeds",
+  "name": "Pumpkin seeds",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 559,
+   "protein": 30.2,
+   "carbs": 10.7,
+   "fiber": 6.0,
+   "sugar": 1.4,
+   "fat": 49.0
+  },
+  "gramsPerCup": 129,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.834,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "pepitas"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "sunflower_seeds",
+  "name": "Sunflower seeds",
+  "category": "nutSeed",
+  "per100g": {
+   "kcal": 584,
+   "protein": 20.8,
+   "carbs": 20.0,
+   "fiber": 8.6,
+   "sugar": 2.6,
+   "fat": 51.5
+  },
+  "gramsPerCup": 140,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.6899,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "oats",
+  "name": "Rolled oats",
+  "category": "grain",
+  "per100g": {
+   "kcal": 389,
+   "protein": 16.9,
+   "carbs": 66.3,
+   "fiber": 10.6,
+   "sugar": 0,
+   "fat": 6.9
+  },
+  "gramsPerCup": 81,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.9208,
+  "defaultUnit": "cup",
+  "aliases": [
+   "quick oats"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "oat_bran",
+  "name": "Oat bran",
+  "category": "grain",
+  "per100g": {
+   "kcal": 246,
+   "protein": 17.3,
+   "carbs": 66.2,
+   "fiber": 15.4,
+   "sugar": 1.4,
+   "fat": 7.0
+  },
+  "gramsPerCup": 94,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.5169,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "granola",
+  "name": "Granola",
+  "category": "grain",
+  "per100g": {
+   "kcal": 471,
+   "protein": 10.0,
+   "carbs": 64.0,
+   "fiber": 7.0,
+   "sugar": 25.0,
+   "fat": 20.0
+  },
+  "gramsPerCup": 122,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.9392,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": true
+  }
+ },
+ {
+  "id": "wheat_germ",
+  "name": "Wheat germ",
+  "category": "grain",
+  "per100g": {
+   "kcal": 360,
+   "protein": 23.0,
+   "carbs": 51.8,
+   "fiber": 13.2,
+   "sugar": 0,
+   "fat": 9.7
+  },
+  "gramsPerCup": 115,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.0573,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": true
+  }
+ },
+ {
+  "id": "psyllium",
+  "name": "Psyllium husk",
+  "category": "grain",
+  "per100g": {
+   "kcal": 200,
+   "protein": 2.0,
+   "carbs": 80.0,
+   "fiber": 78.0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 96,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.4645,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "graham_cracker",
+  "name": "Graham crackers",
+  "category": "grain",
+  "per100g": {
+   "kcal": 423,
+   "protein": 7.0,
+   "carbs": 77.0,
+   "fiber": 2.8,
+   "sugar": 25.0,
+   "fat": 10.0
+  },
+  "gramsPerCup": 85,
+  "gramsPerPiece": 14,
+  "pieceName": "sheet",
+  "isLiquid": false,
+  "mlPerGram": 2.7834,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": true
+  }
+ },
+ {
+  "id": "choc_cookie",
+  "name": "Chocolate sandwich cookies",
+  "category": "grain",
+  "per100g": {
+   "kcal": 471,
+   "protein": 5.0,
+   "carbs": 71.0,
+   "fiber": 3.0,
+   "sugar": 38.0,
+   "fat": 20.0
+  },
+  "gramsPerCup": 120,
+  "gramsPerPiece": 11,
+  "pieceName": "cookie",
+  "isLiquid": false,
+  "mlPerGram": 1.9716,
+  "defaultUnit": "cup",
+  "aliases": [
+   "oreo"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": true
+  }
+ },
+ {
+  "id": "cacao_powder",
+  "name": "Unsweetened cacao powder",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 228,
+   "protein": 19.6,
+   "carbs": 57.9,
+   "fiber": 37.0,
+   "sugar": 1.8,
+   "fat": 13.7
+  },
+  "gramsPerCup": 86,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.751,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "cocoa powder"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cacao_nibs",
+  "name": "Cacao nibs",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 650,
+   "protein": 14.0,
+   "carbs": 36.0,
+   "fiber": 33.0,
+   "sugar": 1.0,
+   "fat": 52.0
+  },
+  "gramsPerCup": 120,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.9716,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "matcha",
+  "name": "Matcha powder",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 324,
+   "protein": 29.0,
+   "carbs": 39.0,
+   "fiber": 38.0,
+   "sugar": 0,
+   "fat": 5.3
+  },
+  "gramsPerCup": 96,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.4645,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "spirulina",
+  "name": "Spirulina powder",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 290,
+   "protein": 57.0,
+   "carbs": 23.9,
+   "fiber": 3.6,
+   "sugar": 3.1,
+   "fat": 7.7
+  },
+  "gramsPerCup": 112,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.1124,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "maca",
+  "name": "Maca powder",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 325,
+   "protein": 14.5,
+   "carbs": 71.4,
+   "fiber": 7.4,
+   "sugar": 31.0,
+   "fat": 1.2
+  },
+  "gramsPerCup": 128,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.8483,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "instant_coffee",
+  "name": "Instant coffee",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 353,
+   "protein": 12.2,
+   "carbs": 41.1,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 58,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 4.0791,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cinnamon",
+  "name": "Ground cinnamon",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 247,
+   "protein": 4.0,
+   "carbs": 80.6,
+   "fiber": 53.1,
+   "sugar": 2.2,
+   "fat": 1.2
+  },
+  "gramsPerCup": 124,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.908,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "nutmeg",
+  "name": "Ground nutmeg",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 525,
+   "protein": 5.8,
+   "carbs": 49.3,
+   "fiber": 20.8,
+   "sugar": 28.5,
+   "fat": 36.3
+  },
+  "gramsPerCup": 110,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.1508,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "turmeric",
+  "name": "Ground turmeric",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 312,
+   "protein": 9.7,
+   "carbs": 67.1,
+   "fiber": 22.7,
+   "sugar": 3.2,
+   "fat": 3.3
+  },
+  "gramsPerCup": 144,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.643,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "vanilla_extract",
+  "name": "Vanilla extract",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 288,
+   "protein": 0.1,
+   "carbs": 12.7,
+   "fiber": 0,
+   "sugar": 12.7,
+   "fat": 0.1
+  },
+  "gramsPerCup": 208,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.1374,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "salt",
+  "name": "Kosher salt",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 0,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 288,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.8215,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "sea salt"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "espresso_powder",
+  "name": "Espresso powder",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 353,
+   "protein": 12.2,
+   "carbs": 41.1,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 58,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 4.0791,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "honey",
+  "name": "Honey",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 304,
+   "protein": 0.3,
+   "carbs": 82.4,
+   "fiber": 0.2,
+   "sugar": 82.1,
+   "fat": 0
+  },
+  "gramsPerCup": 339,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.6979,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "maple_syrup",
+  "name": "Maple syrup",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 260,
+   "protein": 0,
+   "carbs": 67.0,
+   "fiber": 0,
+   "sugar": 60.5,
+   "fat": 0.1
+  },
+  "gramsPerCup": 322,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.7347,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "agave",
+  "name": "Agave syrup",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 310,
+   "protein": 0.1,
+   "carbs": 76.0,
+   "fiber": 0.2,
+   "sugar": 68.0,
+   "fat": 0.5
+  },
+  "gramsPerCup": 336,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.7041,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "sugar",
+  "name": "Granulated sugar",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 387,
+   "protein": 0,
+   "carbs": 100.0,
+   "fiber": 0,
+   "sugar": 100.0,
+   "fat": 0
+  },
+  "gramsPerCup": 200,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.1829,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "brown_sugar",
+  "name": "Brown sugar",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 380,
+   "protein": 0,
+   "carbs": 98.0,
+   "fiber": 0,
+   "sugar": 97.0,
+   "fat": 0
+  },
+  "gramsPerCup": 220,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0754,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "chocolate_syrup",
+  "name": "Chocolate syrup",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 279,
+   "protein": 2.1,
+   "carbs": 65.0,
+   "fiber": 2.6,
+   "sugar": 49.5,
+   "fat": 1.1
+  },
+  "gramsPerCup": 300,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.7886,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "caramel_sauce",
+  "name": "Caramel sauce",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 310,
+   "protein": 1.0,
+   "carbs": 68.0,
+   "fiber": 0,
+   "sugar": 55.0,
+   "fat": 4.0
+  },
+  "gramsPerCup": 310,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.7632,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "stevia",
+  "name": "Stevia",
+  "category": "sweetener",
+  "per100g": {
+   "kcal": 0,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 200,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.1829,
+  "defaultUnit": "tbsp",
+  "aliases": [
+   "monk fruit"
+  ],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cumin",
+  "name": "Ground cumin",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 375,
+   "protein": 17.8,
+   "carbs": 44.2,
+   "fiber": 10.5,
+   "sugar": 2.3,
+   "fat": 22.3
+  },
+  "gramsPerCup": 100,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.3659,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "black_pepper",
+  "name": "Ground black pepper",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 251,
+   "protein": 10.4,
+   "carbs": 63.9,
+   "fiber": 25.3,
+   "sugar": 0.6,
+   "fat": 3.3
+  },
+  "gramsPerCup": 115,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 2.0573,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "dijon",
+  "name": "Dijon mustard",
+  "category": "flavor",
+  "per100g": {
+   "kcal": 66,
+   "protein": 4.4,
+   "carbs": 5.8,
+   "fiber": 3.3,
+   "sugar": 1.1,
+   "fat": 3.3
+  },
+  "gramsPerCup": 249,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 0.9502,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "cider_vinegar",
+  "name": "Apple cider vinegar",
+  "category": "liquid",
+  "per100g": {
+   "kcal": 21,
+   "protein": 0,
+   "carbs": 0.9,
+   "fiber": 0,
+   "sugar": 0.4,
+   "fat": 0
+  },
+  "gramsPerCup": 239,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 0.9899,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "olive_oil",
+  "name": "Olive oil",
+  "category": "other",
+  "per100g": {
+   "kcal": 884,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 100.0
+  },
+  "gramsPerCup": 216,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0953,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coconut_oil",
+  "name": "Coconut oil",
+  "category": "other",
+  "per100g": {
+   "kcal": 892,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 99.0
+  },
+  "gramsPerCup": 218,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0853,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": true,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "mct_oil",
+  "name": "MCT oil",
+  "category": "other",
+  "per100g": {
+   "kcal": 830,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 100.0
+  },
+  "gramsPerCup": 216,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0953,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "mayonnaise",
+  "name": "Mayonnaise",
+  "category": "other",
+  "per100g": {
+   "kcal": 680,
+   "protein": 1.0,
+   "carbs": 0.6,
+   "fiber": 0,
+   "sugar": 0.6,
+   "fat": 75.0
+  },
+  "gramsPerCup": 224,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": false,
+  "mlPerGram": 1.0562,
+  "defaultUnit": "tbsp",
+  "aliases": [],
+  "flags": {
+   "isAnimal": true,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": false,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "tequila",
+  "name": "Tequila",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 231,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": 42,
+  "pieceName": "shot",
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "vodka",
+  "name": "Vodka",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 231,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": 42,
+  "pieceName": "shot",
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "white_rum",
+  "name": "White rum",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 231,
+   "protein": 0,
+   "carbs": 0,
+   "fiber": 0,
+   "sugar": 0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": 42,
+  "pieceName": "shot",
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "triple_sec",
+  "name": "Triple sec",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 250,
+   "protein": 0,
+   "carbs": 25.0,
+   "fiber": 0,
+   "sugar": 25.0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "coffee_liqueur",
+  "name": "Coffee liqueur",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 336,
+   "protein": 0,
+   "carbs": 46.0,
+   "fiber": 0,
+   "sugar": 46.0,
+   "fat": 0.3
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": true,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "white_wine",
+  "name": "White wine",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 82,
+   "protein": 0.1,
+   "carbs": 2.6,
+   "fiber": 0,
+   "sugar": 1.0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ },
+ {
+  "id": "prosecco",
+  "name": "Prosecco",
+  "category": "alcohol",
+  "per100g": {
+   "kcal": 80,
+   "protein": 0.1,
+   "carbs": 2.0,
+   "fiber": 0,
+   "sugar": 1.0,
+   "fat": 0
+  },
+  "gramsPerCup": 236,
+  "gramsPerPiece": null,
+  "pieceName": null,
+  "isLiquid": true,
+  "mlPerGram": 1.0025,
+  "defaultUnit": "cup",
+  "aliases": [],
+  "flags": {
+   "isAnimal": false,
+   "isDairy": false,
+   "hasNuts": false,
+   "hasCaffeine": false,
+   "isAlcohol": true,
+   "hasGluten": false
+  }
+ }
+]

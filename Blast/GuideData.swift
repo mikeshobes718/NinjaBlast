@@ -24,26 +24,6 @@ struct BlendStep: Identifiable {
     let text: String
 }
 
-struct Ingredient: Identifiable {
-    var id: String { amount + name }
-    let amount: String
-    let name: String
-}
-
-struct Recipe: Identifiable {
-    let id: String
-    let name: String
-    let prep: String
-    let yield: String
-    let program: String?
-    let batteryNote: String?
-    let tip: String?
-    let accent: Color
-    let symbol: String
-    let ingredients: [Ingredient]
-    let steps: [String]
-}
-
 struct Program: Identifiable {
     let id: String
     let name: String
@@ -119,7 +99,8 @@ struct Guide {
     let troubles: [TroubleBlock]
     let leds: [LEDStatus]
     let ledNote: String?
-    let recipes: [Recipe]
+    let minLiquidML: Double
+    let maxFillML: Double
 
     func topic(_ id: GuideID) -> GuideTopic? {
         topics.first { $0.id == id }
@@ -289,138 +270,8 @@ extension GuideBook {
             LEDStatus(id: "fault", title: "Flashing white + red, or flashing red while blending", meaning: "Fault. Needs support.", action: "Call SharkNinja at 11 3003-9030.", colorA: .white, colorB: BlastTheme.red, pulse: .pair),
         ],
         ledNote: nil,
-        recipes: [
-            Recipe(
-                id: "beet",
-                name: "Beet & Feta Dip",
-                prep: "5 min",
-                yield: "2 servings · 230 ml",
-                program: nil,
-                batteryNote: nil,
-                tip: "Finish with fresh cilantro and pumpkin seeds on top.",
-                accent: Color(red: 0.55, green: 0.12, blue: 0.28),
-                symbol: "leaf.fill",
-                ingredients: [
-                    Ingredient(amount: "30 ml", name: "olive oil"),
-                    Ingredient(amount: "1 tbsp", name: "lemon juice"),
-                    Ingredient(amount: "2 tbsp", name: "plain yogurt"),
-                    Ingredient(amount: "1 tsp", name: "honey"),
-                    Ingredient(amount: "1/2", name: "clove garlic, peeled"),
-                    Ingredient(amount: "150 g", name: "pre-cooked drained beets, chopped"),
-                    Ingredient(amount: "70 g", name: "feta cheese, cubed"),
-                    Ingredient(amount: "1/2 tsp", name: "ground cumin"),
-                    Ingredient(amount: "1 tsp", name: "flaky sea salt"),
-                    Ingredient(amount: "to taste", name: "ground black pepper"),
-                ],
-                steps: [
-                    "Attach the cup to the motor base and turn the blender on with the power button.",
-                    "Remove the lid and add all ingredients in the order listed. Reseal the lid.",
-                    "Press Start/Stop for a 30-second blend cycle.",
-                    "If needed, run another 30-second cycle for a smoother texture.",
-                    "When done, press the power button to turn off.",
-                ]
-            ),
-            Recipe(
-                id: "salsa",
-                name: "Creamy Avocado Salsa",
-                prep: "5 min",
-                yield: "1.5 cups",
-                program: nil,
-                batteryNote: nil,
-                tip: "Serve with tortillas.",
-                accent: Color(red: 0.22, green: 0.48, blue: 0.28),
-                symbol: "carrot.fill",
-                ingredients: [
-                    Ingredient(amount: "2 tbsp", name: "lemon juice"),
-                    Ingredient(amount: "59 ml", name: "milk of your choice"),
-                    Ingredient(amount: "1 tsp", name: "kosher salt"),
-                    Ingredient(amount: "1 tsp", name: "ground black pepper"),
-                    Ingredient(amount: "1/2", name: "jalapeño, seeded and chopped"),
-                    Ingredient(amount: "4 g", name: "cilantro, leaves and stems"),
-                    Ingredient(amount: "59 ml", name: "sour cream"),
-                    Ingredient(amount: "59 ml", name: "mayonnaise"),
-                    Ingredient(amount: "1", name: "avocado, pitted, peeled, and cubed"),
-                ],
-                steps: [
-                    "With the cup attached to the base, add ingredients in the order listed. Seal the lid.",
-                    "Turn the blender on, then press Start/Stop for a 30-second cycle.",
-                    "Run another 30-second cycle if you want it smoother.",
-                    "Turn off and serve with tortillas.",
-                ]
-            ),
-            Recipe(
-                id: "vinaigrette",
-                name: "Apple Cider Vinaigrette",
-                prep: "5 min",
-                yield: "1 cup",
-                program: nil,
-                batteryNote: "Light mix. Easy on the battery.",
-                tip: nil,
-                accent: Color(red: 0.72, green: 0.48, blue: 0.14),
-                symbol: "drop.fill",
-                ingredients: [
-                    Ingredient(amount: "118 ml", name: "olive oil"),
-                    Ingredient(amount: "118 ml", name: "apple cider vinegar"),
-                    Ingredient(amount: "2 tsp", name: "chopped garlic"),
-                    Ingredient(amount: "1.5 tbsp", name: "agave syrup"),
-                    Ingredient(amount: "1/2 tsp", name: "Dijon mustard"),
-                    Ingredient(amount: "1 tsp", name: "kosher salt"),
-                    Ingredient(amount: "1 tsp", name: "ground black pepper"),
-                ],
-                steps: [
-                    "With the cup attached to the base, add ingredients in the order listed. Seal the lid.",
-                    "Turn the blender on, then press Start/Stop for a 30-second cycle.",
-                    "Turn off when done.",
-                ]
-            ),
-            Recipe(
-                id: "coffee",
-                name: "Coffee Protein Shake",
-                prep: "5 min",
-                yield: "1 serving · 470 ml",
-                program: nil,
-                batteryNote: "Ice-heavy. Plan on fewer blends per charge.",
-                tip: nil,
-                accent: Color(red: 0.32, green: 0.2, blue: 0.12),
-                symbol: "cup.and.saucer.fill",
-                ingredients: [
-                    Ingredient(amount: "1 tbsp", name: "agave syrup (optional)"),
-                    Ingredient(amount: "118 ml", name: "cold coffee"),
-                    Ingredient(amount: "118 ml", name: "almond milk"),
-                    Ingredient(amount: "1", name: "frozen banana, cut into quarters"),
-                    Ingredient(amount: "29 g", name: "chocolate whey protein"),
-                    Ingredient(amount: "59 g", name: "ice cubes"),
-                ],
-                steps: [
-                    "With the cup attached to the base, add ingredients in the order listed. Seal the lid.",
-                    "Turn the blender on, then press Start/Stop for a 30-second cycle.",
-                    "Turn off when the shake is smooth.",
-                ]
-            ),
-            Recipe(
-                id: "green",
-                name: "Mighty Green Smoothie",
-                prep: "5 min",
-                yield: "1 serving · 470 ml",
-                program: nil,
-                batteryNote: "Frozen fruit. Top up the charge every few uses.",
-                tip: nil,
-                accent: Color(red: 0.14, green: 0.42, blue: 0.28),
-                symbol: "leaf.circle.fill",
-                ingredients: [
-                    Ingredient(amount: "118 ml", name: "orange juice"),
-                    Ingredient(amount: "118 ml", name: "coconut milk"),
-                    Ingredient(amount: "15 g", name: "spinach"),
-                    Ingredient(amount: "1/2", name: "banana, halved"),
-                    Ingredient(amount: "70 g", name: "frozen mango chunks"),
-                ],
-                steps: [
-                    "With the cup attached to the base, add ingredients in the order listed. Seal the lid.",
-                    "Turn the blender on, then press Start/Stop for a 30-second cycle.",
-                    "Turn off when the smoothie is smooth.",
-                ]
-            ),
-        ]
+        minLiquidML: 177,
+        maxFillML: 400
     )
 }
 
@@ -556,132 +407,7 @@ extension GuideBook {
             LEDStatus(id: "green", title: "Green power symbol", meaning: "Battery is full and the unit is ready.", action: "Go ahead and pick BLEND or CRUSH.", colorA: greenLED, colorB: nil, pulse: .solid),
         ],
         ledNote: "The BC200 quick-start card only documents the green ready light. If your Blast MAX shows another color, check the full Ninja Owner's Guide or call support — the BC100 Blast codes do not necessarily apply.",
-        recipes: [
-            Recipe(
-                id: "max-carrot",
-                name: "Carrot Apple Kale Wake-Up",
-                prep: "5 min prep",
-                yield: "6 min total · serves 1–2",
-                program: "BLEND",
-                batteryNote: nil,
-                tip: "After blending, if a smoother consistency is desired, press BLEND again.",
-                accent: Color(red: 0.85, green: 0.45, blue: 0.12),
-                symbol: "carrot.fill",
-                ingredients: [
-                    Ingredient(amount: "3/4 cup", name: "carrot juice"),
-                    Ingredient(amount: "1/2 cup", name: "packed chopped kale, stems removed"),
-                    Ingredient(amount: "1/4 cup", name: "green apple, peeled, cored, cut into 1/2-inch chunks"),
-                    Ingredient(amount: "1/2 cup", name: "frozen pineapple chunks"),
-                ],
-                steps: [
-                    "Install the vessel onto the motor base, twisting clockwise until the vessel clicks onto the motor base.",
-                    "Turn the unit ON using the power button and ensure the power symbol is GREEN, indicating the battery is full.",
-                    "Remove the lid and add ingredients to the blending vessel in the order listed. Secure the lid to the vessel.",
-                    "Select BLEND.",
-                    "After blending, if a smoother consistency is desired, press BLEND again.",
-                    "When blending is complete, power the motor base off, remove the vessel from the motor base, and enjoy through the sip lid.",
-                ]
-            ),
-            Recipe(
-                id: "max-mocha",
-                name: "Frozen Mocha Cold Brew",
-                prep: "3 min prep",
-                yield: "4 min total · serves 1–2",
-                program: "CRUSH",
-                batteryNote: nil,
-                tip: "Milk may expand during processing. If removing the lid before drinking, do so carefully to avoid spilling.",
-                accent: Color(red: 0.32, green: 0.2, blue: 0.12),
-                symbol: "cup.and.saucer.fill",
-                ingredients: [
-                    Ingredient(amount: "3/4 cup", name: "cold brew coffee concentrate"),
-                    Ingredient(amount: "1/2 cup", name: "whole milk"),
-                    Ingredient(amount: "1/4 cup", name: "chocolate syrup"),
-                    Ingredient(amount: "1/2 cup", name: "ice"),
-                ],
-                steps: [
-                    "Install the vessel onto the motor base, twisting clockwise until the vessel clicks onto the motor base.",
-                    "Turn the unit ON using the power button and ensure the power symbol is GREEN, indicating the battery is full.",
-                    "Remove the lid and add ingredients to the blending vessel in the order listed. Secure the lid to the vessel.",
-                    "Select CRUSH.",
-                    "When blending is complete, power the motor base off, remove the vessel from the motor base, and enjoy through the sip lid.",
-                ]
-            ),
-            Recipe(
-                id: "max-berry",
-                name: "Mixed Berry Vanilla Protein Smoothie",
-                prep: "3 min prep",
-                yield: "4 min total · serves 1–2",
-                program: "BLEND",
-                batteryNote: nil,
-                tip: nil,
-                accent: Color(red: 0.45, green: 0.14, blue: 0.42),
-                symbol: "leaf.fill",
-                ingredients: [
-                    Ingredient(amount: "1 cup", name: "oat milk"),
-                    Ingredient(amount: "1 scoop", name: "vanilla whey protein powder (1 ounce)"),
-                    Ingredient(amount: "3/4 cup", name: "mixed frozen berries"),
-                ],
-                steps: [
-                    "Install the vessel onto the motor base, twisting clockwise until the vessel clicks onto the motor base.",
-                    "Turn the unit ON using the power button and ensure the power symbol is GREEN, indicating the battery is full.",
-                    "Remove the lid and add ingredients to the blending vessel in the order listed. Secure the lid to the vessel.",
-                    "Select BLEND.",
-                    "When blending is complete, power the motor base off, remove the vessel from the motor base, and enjoy through the sip lid.",
-                ]
-            ),
-            Recipe(
-                id: "max-margarita",
-                name: "Mango Margarita",
-                prep: "4 min prep",
-                yield: "5 min total · serves 2",
-                program: "CRUSH",
-                batteryNote: nil,
-                tip: "If a creamier output is desired, remove the vessel from the motor base after processing, shake, then reinstall the vessel and press BLEND. Process until complete.",
-                accent: Color(red: 0.88, green: 0.6, blue: 0.1),
-                symbol: "wineglass.fill",
-                ingredients: [
-                    Ingredient(amount: "1/4 cup", name: "tequila"),
-                    Ingredient(amount: "3 tbsp", name: "triple sec"),
-                    Ingredient(amount: "1/2 cup", name: "frozen lime cocktail mixer"),
-                    Ingredient(amount: "3/4 cup", name: "frozen mango chunks"),
-                    Ingredient(amount: "1/3 cup", name: "ice"),
-                ],
-                steps: [
-                    "Install the vessel onto the motor base, twisting clockwise until the vessel clicks onto the motor base.",
-                    "Turn the unit ON using the power button and ensure the power symbol is GREEN, indicating the battery is full.",
-                    "Remove the lid and add ingredients to the blending vessel in the order listed. Secure the lid to the vessel.",
-                    "Select CRUSH.",
-                    "When blending is complete, power the motor base off, remove the vessel from the motor base, and enjoy through the sip lid.",
-                ]
-            ),
-            Recipe(
-                id: "max-oat",
-                name: "Apple Cinnamon Oat Breakfast Smoothie",
-                prep: "5 min prep",
-                yield: "6 min total · serves 1–2",
-                program: "BLEND",
-                batteryNote: nil,
-                tip: nil,
-                accent: Color(red: 0.6, green: 0.42, blue: 0.18),
-                symbol: "sunrise.fill",
-                ingredients: [
-                    Ingredient(amount: "1 cup", name: "whole milk"),
-                    Ingredient(amount: "2 tbsp", name: "maple syrup"),
-                    Ingredient(amount: "1/2 cup", name: "green apple, peeled, cored, cut into 1/2-inch chunks"),
-                    Ingredient(amount: "1/2 cup", name: "frozen banana slices"),
-                    Ingredient(amount: "1/2 cup", name: "whole milk vanilla yogurt"),
-                    Ingredient(amount: "1 tsp", name: "ground cinnamon"),
-                    Ingredient(amount: "3 tbsp", name: "quick oats"),
-                    Ingredient(amount: "pinch", name: "kosher salt"),
-                ],
-                steps: [
-                    "Install the vessel onto the motor base, twisting clockwise until the vessel clicks onto the motor base.",
-                    "Turn the unit ON using the power button and ensure the power symbol is GREEN, indicating the battery is full.",
-                    "Remove the lid and add ingredients to the blending vessel in the order listed. Secure the lid to the vessel.",
-                    "Select BLEND.",
-                    "When blending is complete, power the motor base off, remove the vessel from the motor base, and enjoy through the sip lid.",
-                ]
-            ),
-        ]
+        minLiquidML: 200,
+        maxFillML: 470
     )
 }

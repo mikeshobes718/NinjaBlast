@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum DeviceKind: String, CaseIterable, Identifiable {
+enum DeviceKind: String, Codable, CaseIterable, Identifiable {
     case blast
     case blastMax
 

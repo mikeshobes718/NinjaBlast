@@ -119,24 +119,6 @@ struct StepCard: View {
     }
 }
 
-struct IngredientRow: View {
-    let item: Ingredient
-
-    var body: some View {
-        HStack(alignment: .firstTextBaseline, spacing: 12) {
-            Text(item.amount)
-                .font(.body.weight(.semibold))
-                .foregroundStyle(Color(red: 0.45, green: 0.72, blue: 1))
-                .frame(width: 78, alignment: .leading)
-            Text(item.name)
-                .font(.body)
-                .foregroundStyle(.white)
-            Spacer(minLength: 0)
-        }
-        .padding(.vertical, 8)
-    }
-}
-
 struct SpecTile: View {
     let item: SpecItem
 
