@@ -827,7 +827,8 @@ KIDS = [
         ("ice", 0.5, "cup")], None),
     ("chocolate-banana-kids", "Chocolate Banana", 1, 3, [
         ("milk_2", 0.75, "cup"), ("banana_frozen", 0.75, "cup"),
-        ("cacao_powder", 2, "tsp"), ("honey", 1, "tsp")], None),
+        ("chocolate_syrup", 1, "tbsp"), ("honey", 1, "tsp")],
+        "Chocolate syrup rather than cacao powder here — cacao carries real caffeine, and this one is for kids."),
     ("apple-cinnamon-kids", "Apple Cinnamon Cup", 1, 3, [
         ("milk_2", 0.75, "cup"), ("applesauce", 0.5, "cup"),
         ("cinnamon", 0.25, "tsp"), ("ice", 0.5, "cup")], None),
@@ -847,7 +848,7 @@ KIDS = [
         ("yogurt_vanilla", 0.25, "cup")], None),
     ("cocoa-oat-kids", "Cocoa Oat Cup", 1, 3, [
         ("oat_milk", 0.75, "cup"), ("banana_frozen", 0.5, "cup"),
-        ("oats", 2, "tbsp"), ("cacao_powder", 1, "tsp"), ("honey", 1, "tsp")], None),
+        ("oats", 2, "tbsp"), ("chocolate_syrup", 2, "tsp"), ("honey", 1, "tsp")], None),
     ("strawberry-oat-kids", "Strawberry Oat Cup", 1, 3, [
         ("oat_milk", 0.75, "cup"), ("strawberry_frozen", 0.75, "cup"),
         ("oats", 2, "tbsp"), ("honey", 1, "tsp")], None),

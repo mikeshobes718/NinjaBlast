@@ -8209,9 +8209,9 @@
     "unit": "cup"
    },
    {
-    "foodID": "cacao_powder",
-    "amount": 2,
-    "unit": "tsp"
+    "foodID": "chocolate_syrup",
+    "amount": 1,
+    "unit": "tbsp"
    },
    {
     "foodID": "honey",
@@ -8219,7 +8219,7 @@
     "unit": "tsp"
    }
   ],
-  "tip": null
+  "tip": "Chocolate syrup rather than cacao powder here — cacao carries real caffeine, and this one is for kids."
  },
  {
   "id": "apple-cinnamon-kids",
@@ -8408,8 +8408,8 @@
     "unit": "tbsp"
    },
    {
-    "foodID": "cacao_powder",
-    "amount": 1,
+    "foodID": "chocolate_syrup",
+    "amount": 2,
     "unit": "tsp"
    },
    {
@@ -12419,7 +12419,7 @@
     "unit": "cup"
    }
   ],
-  "tip": "Taste it before you pour: anything this cold reads about a third less sweet than it did at room temperature, so a frozen margarita wants more agave than a shaken one."
+  "tip": "Taste it before you pour: anything this cold reads about a third less sweet than it did at room temperature, so a frozen margarita carries more sugar than a shaken one and still tastes dry."
  },
  {
   "id": "ck-dusk-in-oaxaca",
@@ -12698,7 +12698,7 @@
     "unit": "cup"
    }
   ],
-  "tip": "Three ingredients means nowhere to hide — squeeze the lime to order, since bottled juice tastes cooked and the whole drink rests on it."
+  "tip": "There is nowhere to hide in a plain daiquiri — squeeze the lime to order, since bottled juice tastes cooked and the whole drink rests on it."
  },
  {
   "id": "ck-golden-banana-freeze",
