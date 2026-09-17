@@ -173,7 +173,15 @@ struct Food: Identifiable, Codable, Hashable {
     func unitLabel(_ unit: MeasureUnit, amount: Double) -> String {
         guard unit == .piece else { return unit.short }
         let noun = pieceName ?? "piece"
-        return amount == 1 ? noun : noun + "s"
+        return amount > 1 ? noun + "s" : noun
+    }
+
+    /// True when the piece name already repeats the food name ("medium banana"),
+    /// so a recipe line can show the count alone instead of "½ medium banana banana".
+    var pieceNameEchoesFoodName: Bool {
+        guard let pieceName else { return false }
+        let key = name.lowercased().split(separator: " ").last.map(String.init) ?? name.lowercased()
+        return pieceName.lowercased().contains(key)
     }
 
     func grams(amount: Double, unit: MeasureUnit) -> Double {

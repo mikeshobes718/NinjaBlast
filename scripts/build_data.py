@@ -275,6 +275,10 @@ def build_food(food):
     (fid, name, cat, kcal, p, c, fib, sug, fat,
      gpc, gpp, piece, liquid, aliases) = food
     ml_per_gram = (CUP_ML / gpc) if gpc else 1.0
+    # Leaves fill the cup loosely and pack down to almost nothing once the
+    # blades start, so their loose-cup volume badly overstates vessel load.
+    if cat == "greens":
+        ml_per_gram = min(ml_per_gram, 3.0)
     return {
         "id": fid,
         "name": name,
@@ -294,6 +298,132 @@ def build_food(food):
     }
 
 
+RECIPE_GROUPS = [
+    ("smoothie", "SMOOTHIES"),
+    ("green", "GREENS"),
+    ("protein", "PROTEIN"),
+    ("coffee", "COFFEE"),
+    ("breakfast", "BREAKFAST"),
+    ("dessert", "DESSERT"),
+    ("cocktail", "COCKTAIL"),
+    ("mocktail", "MOCKTAIL"),
+    ("kids", "KIDS"),
+    ("wellness", "WELLNESS"),
+    ("savory", "SAVORY"),
+]
+
+
+def program_for(category, ingredients):
+    """Ninja's own rule: CRUSH is for frozen drinks, BLEND for everything else."""
+    if category in ("cocktail", "mocktail"):
+        return "crush"
+    ice = next((amt for fid, amt, unit in ingredients if fid == "ice" and unit == "cup"), 0)
+    return "crush" if ice >= 0.75 else "blend"
+
+
+def grams_of(food, amount, unit):
+    gpc = food["gramsPerCup"]
+    gpp = food["gramsPerPiece"]
+    fallback_cup = gpc if gpc else 236.588 / food["mlPerGram"]
+    if unit == "gram":
+        return amount
+    if unit == "milliliter":
+        return amount / food["mlPerGram"]
+    if unit == "cup":
+        return amount * fallback_cup
+    if unit == "tbsp":
+        return amount * fallback_cup / 16
+    if unit == "tsp":
+        return amount * fallback_cup / 48
+    if unit == "piece":
+        return amount * (gpp if gpp else 100)
+    raise ValueError(unit)
+
+
+# Portions are written at a natural ratio, then scaled to the vessel. Only the
+# bulk of the drink shrinks — a scoop of protein or a teaspoon of cinnamon
+# stays put, because halving those changes the recipe rather than the serving.
+BULK = {"liquid", "fruit", "frozen", "dairy", "greens", "vegetable", "alcohol"}
+TARGET_ML = {1: 380.0, 2: 440.0}
+
+
+def round_amount(amount, unit):
+    if unit == "cup":
+        return max(round(amount * 4) / 4, 0.25)
+    if unit in ("tbsp", "tsp"):
+        return max(round(amount * 2) / 2, 0.5)
+    if unit == "piece":
+        return max(round(amount * 4) / 4, 0.25)
+    return max(round(amount / 5) * 5, 5)
+
+
+def volume_of(foods_by_id, ingredients):
+    total = 0.0
+    for fid, amount, unit in ingredients:
+        food = foods_by_id[fid]
+        total += grams_of(food, amount, unit) * food["mlPerGram"]
+    return total
+
+
+def fit_to_vessel(foods_by_id, ingredients, servings):
+    target = TARGET_ML.get(servings, 450.0)
+    for _ in range(6):
+        volume = volume_of(foods_by_id, ingredients)
+        if volume <= target:
+            return ingredients
+        bulk_volume = sum(
+            grams_of(foods_by_id[f], a, u) * foods_by_id[f]["mlPerGram"]
+            for f, a, u in ingredients if foods_by_id[f]["category"] in BULK
+        )
+        fixed_volume = volume - bulk_volume
+        room = target - fixed_volume
+        if bulk_volume <= 0 or room <= 0:
+            return ingredients
+        factor = room / bulk_volume
+        scaled = []
+        for fid, amount, unit in ingredients:
+            if foods_by_id[fid]["category"] in BULK:
+                scaled.append((fid, round_amount(amount * factor, unit), unit))
+            else:
+                scaled.append((fid, amount, unit))
+        if scaled == ingredients:
+            return ingredients
+        ingredients = scaled
+    return ingredients
+
+
+def build_recipes(foods_by_id):
+    import recipes_data
+
+    out = []
+    seen = set()
+    for category, attr in RECIPE_GROUPS:
+        for rid, name, servings, prep, ingredients, tip in getattr(recipes_data, attr):
+            assert rid not in seen, f"duplicate recipe id {rid}"
+            seen.add(rid)
+            for fid, amount, unit in ingredients:
+                assert fid in foods_by_id, f"{rid}: unknown ingredient {fid}"
+                assert unit in ("gram", "milliliter", "cup", "tbsp", "tsp", "piece"), \
+                    f"{rid}: bad unit {unit}"
+                assert amount > 0, f"{rid}: non-positive amount for {fid}"
+            ingredients = fit_to_vessel(foods_by_id, ingredients, servings)
+            out.append({
+                "id": rid,
+                "name": name,
+                "category": category,
+                "program": program_for(category, ingredients),
+                "servings": servings,
+                "prepMinutes": prep,
+                "totalMinutes": prep + 1,
+                "ingredients": [
+                    {"foodID": fid, "amount": amount, "unit": unit}
+                    for fid, amount, unit in ingredients
+                ],
+                "tip": tip,
+            })
+    return out
+
+
 def main():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out_dir = os.path.join(root, "Blast", "Resources")
@@ -310,6 +440,46 @@ def main():
         json.dump(foods, fh, indent=1, ensure_ascii=False)
         fh.write("\n")
     print(f"wrote {len(foods)} foods -> {path}")
+
+    by_id = {f["id"]: f for f in foods}
+    recipes = build_recipes(by_id)
+    path = os.path.join(out_dir, "recipes.json")
+    with open(path, "w") as fh:
+        json.dump(recipes, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    print(f"wrote {len(recipes)} recipes -> {path}")
+    report(recipes, by_id)
+
+
+def report(recipes, by_id):
+    from collections import Counter
+    counts = Counter(r["category"] for r in recipes)
+    print("  by category:", dict(counts))
+
+    oversized = []
+    for r in recipes:
+        volume = sum(
+            grams_of(by_id[i["foodID"]], i["amount"], i["unit"]) * by_id[i["foodID"]]["mlPerGram"]
+            for i in r["ingredients"]
+        )
+        kcal = sum(
+            grams_of(by_id[i["foodID"]], i["amount"], i["unit"]) / 100 * by_id[i["foodID"]]["per100g"]["kcal"]
+            for i in r["ingredients"]
+        )
+        r["_volume"] = volume
+        r["_kcal"] = kcal / r["servings"]
+        if volume > 470:
+            oversized.append((r["id"], round(volume)))
+    fits_blast = sum(1 for r in recipes if r["_volume"] <= 400)
+    print(f"  fits Blast 16 oz: {fits_blast}/{len(recipes)}")
+    print(f"  over Blast MAX 20 oz: {len(oversized)}")
+    if oversized:
+        print("   ", oversized[:12])
+    kcals = sorted(r["_kcal"] for r in recipes)
+    print(f"  kcal/serving: min {kcals[0]:.0f}, median {kcals[len(kcals)//2]:.0f}, max {kcals[-1]:.0f}")
+    for r in recipes:
+        del r["_volume"]
+        del r["_kcal"]
 
 
 if __name__ == "__main__":

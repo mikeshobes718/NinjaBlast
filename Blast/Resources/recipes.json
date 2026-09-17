@@ -1,0 +1,9820 @@
+[
+ {
+  "id": "triple-berry-blast",
+  "name": "Triple Berry Blast",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-banana",
+  "name": "Strawberry Banana Classic",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-lassi",
+  "name": "Mango Lassi",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "yogurt_plain",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Skip the honey if the mango is very ripe."
+ },
+ {
+  "id": "peach-melba",
+  "name": "Peach Melba",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pina-colada-smoothie",
+  "name": "Pineapple Coconut Cooler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-muffin",
+  "name": "Blueberry Muffin Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cherry-almond",
+  "name": "Cherry Almond",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "watermelon-cooler",
+  "name": "Watermelon Mint Cooler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "watermelon",
+    "amount": 1.0,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tropical-sunrise",
+  "name": "Tropical Sunrise",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "raspberry-lemonade-smoothie",
+  "name": "Raspberry Lemonade Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemonade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-cheesecake",
+  "name": "Strawberry Cheesecake Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cream_cheese",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blackberry-sage",
+  "name": "Blackberry Vanilla",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk_vanilla",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blackberry",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "papaya-lime",
+  "name": "Papaya Lime",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "papaya",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "dragonfruit-cooler",
+  "name": "Dragon Fruit Cooler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "dragonfruit",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pear-ginger",
+  "name": "Pear Ginger Fizz",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "kombucha",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pear",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "grape-escape",
+  "name": "Purple Grape Escape",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "grapes",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kiwi-crush",
+  "name": "Kiwi Crush",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kiwi",
+    "amount": 1.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "acai-bowl-drink",
+  "name": "Acai Berry Blend",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "acai_puree",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Use less milk and eat it with a spoon for a bowl."
+ },
+ {
+  "id": "orange-creamsicle",
+  "name": "Orange Creamsicle",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "fig-honey",
+  "name": "Fig and Honey",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "fig",
+    "amount": 2.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "greek_yogurt_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apricot-orange",
+  "name": "Apricot Orange",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apricot_dried",
+    "amount": 3.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Soak the apricots in warm water for five minutes if they are very dry."
+ },
+ {
+  "id": "pomegranate-berry",
+  "name": "Pomegranate Berry",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "pomegranate_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cantaloupe-cream",
+  "name": "Cantaloupe Cream",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cantaloupe",
+    "amount": 1.0,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "honeydew-cucumber",
+  "name": "Honeydew Cucumber",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honeydew",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "guava-paradise",
+  "name": "Guava Paradise",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "pineapple_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "guava",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "passionfruit-pineapple",
+  "name": "Passion Fruit Pineapple",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "passionfruit",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "plum-perfect",
+  "name": "Prune and Pear",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "prune",
+    "amount": 1.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "pear",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "very-cherry-vanilla",
+  "name": "Very Cherry Vanilla",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk_vanilla",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-date-shake",
+  "name": "Banana Date Shake",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "date",
+    "amount": 1.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mixed-melon",
+  "name": "Mixed Melon",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "watermelon",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honeydew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-basil",
+  "name": "Strawberry Basil",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "basil",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-lemon",
+  "name": "Blueberry Lemon",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "raspberry-peach",
+  "name": "Raspberry Peach",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-pie-smoothie",
+  "name": "Apple Pie Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "applesauce",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pina-mango",
+  "name": "Pina Mango",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "grapefruit-sunrise",
+  "name": "Grapefruit Sunrise",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "grapefruit",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coconut-cream-pie",
+  "name": "Coconut Cream Pie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "coconut_shredded",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 1,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mixed-berry-yogurt",
+  "name": "Mixed Berry Yogurt Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cranberry-orange",
+  "name": "Cranberry Orange",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cranberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tart-cherry-berry",
+  "name": "Tart Cherry Berry",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peaches-and-cream",
+  "name": "Peaches and Cream",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-kiwi",
+  "name": "Strawberry Kiwi",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kiwi",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-chili",
+  "name": "Mango Chili Cooler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Start with a sliver of jalapeño, taste, then add more."
+ },
+ {
+  "id": "berry-beet-blend",
+  "name": "Berry Beet Blend",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "beet",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pineapple-basil",
+  "name": "Pineapple Basil",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "basil",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blood-orange-berry",
+  "name": "Orange Berry Swirl",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-bread-smoothie",
+  "name": "Banana Bread Smoothie",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "walnuts",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-cobbler",
+  "name": "Blueberry Cobbler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "granola",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "raspberry-rose",
+  "name": "Raspberry Cream",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-turmeric",
+  "name": "Mango Turmeric",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "turmeric",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.05,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "The pinch of black pepper is what makes turmeric absorbable."
+ },
+ {
+  "id": "strawberry-rhubarb",
+  "name": "Strawberry Orange Crush",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tropical-greens-lite",
+  "name": "Tropical Cooler",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "pineapple_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cherry-cola-smoothie",
+  "name": "Cherry Vanilla Cream",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-berry",
+  "name": "Apple Berry",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pomegranate-cherry",
+  "name": "Pomegranate Cherry",
+  "category": "smoothie",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "pomegranate_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "classic-green",
+  "name": "Classic Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kale-pineapple",
+  "name": "Kale Pineapple",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kale",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-machine",
+  "name": "Green Machine",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "celery",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "avocado-greens",
+  "name": "Avocado Green Cream",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "avocado",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cucumber-mint-green",
+  "name": "Cucumber Mint Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mint",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-protein",
+  "name": "Green Protein",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "matcha-greens",
+  "name": "Matcha Greens",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "matcha",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kale-apple-ginger",
+  "name": "Kale Apple Ginger",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kale",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 4,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spinach-peanut-butter",
+  "name": "Green Peanut Butter Cup",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "The cocoa hides the color if greens are a hard sell."
+ },
+ {
+  "id": "arugula-pear",
+  "name": "Arugula Pear",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "arugula",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pear",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "swiss-chard-berry",
+  "name": "Chard Berry",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chard",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-detox",
+  "name": "Green Reset",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "green_tea",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tropical-green",
+  "name": "Tropical Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kale",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-goddess",
+  "name": "Green Goddess",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "avocado",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "kiwi",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 2,
+    "unit": "gram"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "celery-cucumber-tonic",
+  "name": "Celery Cucumber Tonic",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "celery",
+    "amount": 1.0,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spinach-oat-green",
+  "name": "Green Oat Breakfast",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "hemp-green",
+  "name": "Hemp Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "hemp_hearts",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kiwi-spinach",
+  "name": "Kiwi Spinach",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kiwi",
+    "amount": 1.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-tea-pear",
+  "name": "Green Tea Pear",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "green_tea",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pear",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "zucchini-green",
+  "name": "Zucchini Vanilla Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk_vanilla",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "zucchini",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Frozen zucchini makes it creamy without tasting like vegetables."
+ },
+ {
+  "id": "parsley-lemon-green",
+  "name": "Parsley Lemon Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "parsley",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "romaine-melon",
+  "name": "Romaine Melon",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "romaine",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honeydew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-chia",
+  "name": "Green Chia",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spirulina-green",
+  "name": "Spirulina Power Green",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spirulina",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "broccoli-free-green",
+  "name": "Sweet Green Starter",
+  "category": "green",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": "A mild first green smoothie — mostly fruit, one cup of spinach."
+ },
+ {
+  "id": "vanilla-whey-classic",
+  "name": "Vanilla Protein Classic",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-peanut-protein",
+  "name": "Chocolate Peanut Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "post-workout-cherry",
+  "name": "Tart Cherry Recovery",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_unflavored",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Tart cherry is a classic post-training choice for sore legs."
+ },
+ {
+  "id": "cottage-berry-protein",
+  "name": "Cottage Cheese Berry",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_skim",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cottage_cheese",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "skyr-blueberry",
+  "name": "Skyr Blueberry",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_skim",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "skyr",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "plant-power-chocolate",
+  "name": "Plant Power Chocolate",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "egg-white-vanilla",
+  "name": "Egg White Vanilla Shake",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_skim",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "egg_white",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Use pasteurized egg whites only."
+ },
+ {
+  "id": "greek-mocha-protein",
+  "name": "Greek Mocha Protein",
+  "category": "protein",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coffee",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mass-gainer",
+  "name": "Big Build Shake",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.5,
+    "unit": "piece"
+   }
+  ],
+  "tip": "High calorie by design — this is the one for a bulking phase."
+ },
+ {
+  "id": "lean-vanilla",
+  "name": "Lean Vanilla",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "collagen-berry",
+  "name": "Collagen Berry",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "collagen",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "casein-night",
+  "name": "Bedtime Casein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "casein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Casein digests slowly, which is the point before bed."
+ },
+ {
+  "id": "tofu-berry-protein",
+  "name": "Silken Tofu Berry",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "silken_tofu",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pb-banana-protein",
+  "name": "PB Banana Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "peanut_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mocha-collagen",
+  "name": "Mocha Collagen",
+  "category": "protein",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "collagen",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-protein-cream",
+  "name": "Strawberry Protein Cream",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-recovery",
+  "name": "Green Recovery",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_unflavored",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-oat-protein",
+  "name": "Chocolate Oat Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pumpkin-protein",
+  "name": "Pumpkin Spice Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "pumpkin_puree",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-protein-oat",
+  "name": "Blueberry Protein Oats",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "almond-joy-protein",
+  "name": "Almond Joy Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "coconut_shredded",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kefir-protein",
+  "name": "Kefir Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "kefir",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-protein",
+  "name": "Mango Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "espresso-protein",
+  "name": "Espresso Protein",
+  "category": "protein",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 1.0,
+    "unit": "piece"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "salted-caramel-protein",
+  "name": "Salted Caramel Protein",
+  "category": "protein",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "caramel_sauce",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-cherry-protein",
+  "name": "Chocolate Cherry Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "matcha-protein",
+  "name": "Matcha Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "matcha",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "high-fiber-protein",
+  "name": "High Fiber Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "flax",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-cinnamon-protein",
+  "name": "Apple Cinnamon Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "applesauce",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cookies-cream-protein",
+  "name": "Cookies and Cream Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "choc_cookie",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tropical-protein",
+  "name": "Tropical Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peanut-mocha-protein",
+  "name": "Peanut Mocha Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_chocolate",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "peanut_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "greek-vanilla-protein",
+  "name": "Greek Vanilla Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_skim",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "beet-protein",
+  "name": "Beet Performance",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "beet",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_unflavored",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "overnight-protein-oats",
+  "name": "Protein Oat Shake",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "whey_vanilla",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-chocolate-pb",
+  "name": "Vegan Chocolate PB",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-berry-protein",
+  "name": "Vegan Berry Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-green-protein",
+  "name": "Vegan Green Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tofu-chocolate-protein",
+  "name": "Tofu Chocolate Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "silken_tofu",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 1.5,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-mocha-protein",
+  "name": "Vegan Mocha Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "soy_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "hemp-protein-shake",
+  "name": "Hemp Seed Protein Shake",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "hemp_hearts",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-vanilla-oat-protein",
+  "name": "Vegan Vanilla Oat Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-tropical-protein",
+  "name": "Vegan Tropical Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-pb-power",
+  "name": "Vegan Peanut Power",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "peanut_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-cherry-recovery",
+  "name": "Vegan Cherry Recovery",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-matcha-protein",
+  "name": "Vegan Matcha Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "matcha",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-fiber-protein",
+  "name": "Vegan Fiber Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-almond-date-protein",
+  "name": "Vegan Almond Date Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 2,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-pumpkin-protein",
+  "name": "Vegan Pumpkin Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "pumpkin_puree",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tofu-berry-breakfast-protein",
+  "name": "Tofu Berry Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "soy_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "silken_tofu",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vegan-espresso-protein",
+  "name": "Vegan Espresso Protein",
+  "category": "protein",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "soy_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "plant_protein",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-latte",
+  "name": "Frozen Vanilla Latte",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mocha-freeze",
+  "name": "Mocha Freeze",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chocolate_syrup",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "caramel-frappe",
+  "name": "Caramel Frappe",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coffee",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "caramel_sauce",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "espresso-banana",
+  "name": "Espresso Banana",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 1.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vietnamese-style",
+  "name": "Sweet Condensed Coffee",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "condensed_milk",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coffee-oat-shake",
+  "name": "Coffee Oat Shake",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oat_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 1.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "affogato-shake",
+  "name": "Affogato Shake",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coconut-cold-brew",
+  "name": "Coconut Cold Brew",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cinnamon-coffee",
+  "name": "Cinnamon Coffee Cream",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coffee",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "half_and_half",
+    "amount": 2.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "brown_sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mocha-almond-freeze",
+  "name": "Mocha Almond Freeze",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_milk",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "dalgona-style",
+  "name": "Whipped Coffee Shake",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "instant_coffee",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pumpkin-latte-freeze",
+  "name": "Pumpkin Latte Freeze",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pumpkin_puree",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "matcha-latte-freeze",
+  "name": "Iced Matcha Latte",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "matcha",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chai-freeze",
+  "name": "Chai Freeze",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "chai_concentrate",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "dirty-chai",
+  "name": "Dirty Chai Freeze",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "chai_concentrate",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "espresso",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coffee-date-shake",
+  "name": "Coffee Date Shake",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_milk",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "date",
+    "amount": 2.0,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "hazelnut-mocha",
+  "name": "Hazelnut Mocha",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "choc_hazelnut",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coffee-cacao-nib",
+  "name": "Cacao Nib Cold Brew",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oat_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_nibs",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mint-mocha",
+  "name": "Mint Mocha Freeze",
+  "category": "coffee",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 2,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-tea-freeze",
+  "name": "Green Tea Freeze",
+  "category": "coffee",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "green_tea",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "oatmeal-in-a-glass",
+  "name": "Oatmeal in a Glass",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.33,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peanut-butter-banana-oats",
+  "name": "PB Banana Oats",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "berry-yogurt-breakfast",
+  "name": "Berry Yogurt Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "granola",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "granola-crunch-shake",
+  "name": "Granola Crunch Shake",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "granola",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chia-breakfast",
+  "name": "Chia Breakfast Blend",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Let it sit two minutes after blending and the chia thickens it."
+ },
+ {
+  "id": "flax-berry-breakfast",
+  "name": "Flax Berry Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "flax",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "carrot-cake-breakfast",
+  "name": "Carrot Cake Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "carrot",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "raisin",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "sweet-potato-breakfast",
+  "name": "Sweet Potato Pie Shake",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "sweet_potato",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "wheat-germ-banana",
+  "name": "Wheat Germ Banana",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "wheat_germ",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-oat-breakfast",
+  "name": "Apple Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cottage-peach-breakfast",
+  "name": "Cottage Peach Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_skim",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cottage_cheese",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mocha-oat-breakfast",
+  "name": "Mocha Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oat_milk",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "kefir-granola",
+  "name": "Kefir Granola Start",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "kefir",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "granola",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "almond-date-breakfast",
+  "name": "Almond Date Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 2.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "maple-pecan-oats",
+  "name": "Maple Pecan Oats",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pecans",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pumpkin-oat-breakfast",
+  "name": "Pumpkin Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pumpkin_puree",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-oat-breakfast",
+  "name": "Strawberry Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-walnut-breakfast",
+  "name": "Banana Walnut Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "walnuts",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-flax-breakfast",
+  "name": "Blueberry Flax Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "flax",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tahini-banana-breakfast",
+  "name": "Tahini Banana Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "tahini",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "oat-bran-berry",
+  "name": "Oat Bran Berry",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oat_bran",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "sunflower-breakfast",
+  "name": "Sunflower Seed Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "sunflower_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": "Nut-free, so it works for school-safe mornings."
+ },
+ {
+  "id": "hemp-oat-breakfast",
+  "name": "Hemp Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "hemp_hearts",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "oats",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-yogurt-breakfast",
+  "name": "Mango Yogurt Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cocoa-oat-breakfast",
+  "name": "Cocoa Oat Breakfast",
+  "category": "breakfast",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "vanilla-milkshake",
+  "name": "Vanilla Milkshake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-milkshake",
+  "name": "Chocolate Milkshake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chocolate_syrup",
+    "amount": 2,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-milkshake",
+  "name": "Strawberry Milkshake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cookies-and-cream-shake",
+  "name": "Cookies and Cream Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "choc_cookie",
+    "amount": 3,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "brownie-batter",
+  "name": "Brownie Batter Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 2,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "key-lime-pie",
+  "name": "Key Lime Pie Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 2,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-split",
+  "name": "Banana Split Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "chocolate_syrup",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "salted-caramel-shake",
+  "name": "Salted Caramel Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "caramel_sauce",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peanut-butter-cup-shake",
+  "name": "Peanut Butter Cup Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mint-chip-shake",
+  "name": "Mint Chip Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mint",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "cacao_nibs",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-hot-chocolate",
+  "name": "Frozen Hot Chocolate",
+  "category": "dessert",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cheesecake-shake",
+  "name": "Cheesecake Shake",
+  "category": "dessert",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cream_cheese",
+    "amount": 2.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tiramisu-shake",
+  "name": "Tiramisu Shake",
+  "category": "dessert",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cream_cheese",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "affogato-float",
+  "name": "Coffee Float",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cold_brew",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-crisp-shake",
+  "name": "Apple Crisp Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "applesauce",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "granola",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pumpkin-pie-shake",
+  "name": "Pumpkin Pie Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "pumpkin_puree",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "nutmeg",
+    "amount": 0.1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "nutella-shake",
+  "name": "Chocolate Hazelnut Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "choc_hazelnut",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "s-mores-shake",
+  "name": "S'mores Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chocolate_syrup",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 2,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coconut-fudge",
+  "name": "Coconut Fudge Shake",
+  "category": "dessert",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_canned",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-yogurt-berry",
+  "name": "Frozen Yogurt Berry",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "frozen_yogurt",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "caramel-apple-shake",
+  "name": "Caramel Apple Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "caramel_sauce",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-cherry-shake",
+  "name": "Black Forest Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "maple-walnut-shake",
+  "name": "Maple Walnut Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "walnuts",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "orange-dreamsicle-shake",
+  "name": "Orange Dreamsicle Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pistachio-shake",
+  "name": "Pistachio Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pistachios",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-cheesecake-shake",
+  "name": "Blueberry Cheesecake Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cream_cheese",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "espresso-chip-shake",
+  "name": "Espresso Chip Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "espresso",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_nibs",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-cream-pie-shake",
+  "name": "Banana Cream Pie Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_whole",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "graham_cracker",
+    "amount": 1,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "choc-avocado-mousse",
+  "name": "Chocolate Avocado Mousse",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "avocado",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "maple_syrup",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.33,
+    "unit": "cup"
+   },
+   {
+    "foodID": "vanilla_extract",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Thick by design. Chill it and eat it with a spoon."
+ },
+ {
+  "id": "date-caramel-shake",
+  "name": "Date Caramel Shake",
+  "category": "dessert",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "date",
+    "amount": 3.0,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-margarita",
+  "name": "Frozen Lime Margarita",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "triple_sec",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "limeade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-margarita",
+  "name": "Strawberry Margarita",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "triple_sec",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-daiquiri",
+  "name": "Frozen Strawberry Daiquiri",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pina-colada",
+  "name": "Pina Colada",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 1.0,
+    "unit": "cup"
+   },
+   {
+    "foodID": "coconut_milk_canned",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-mojito",
+  "name": "Frozen Mojito",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 5,
+    "unit": "gram"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-daiquiri",
+  "name": "Mango Daiquiri",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "watermelon-margarita",
+  "name": "Watermelon Margarita",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "watermelon",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "triple_sec",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-espresso-martini",
+  "name": "Frozen Espresso Martini",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "vodka",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "coffee_liqueur",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "espresso",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peach-bellini-freeze",
+  "name": "Frozen Peach Bellini",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "prosecco",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": "Add the prosecco last and pulse briefly so it keeps some fizz."
+ },
+ {
+  "id": "frozen-cosmo",
+  "name": "Frozen Cosmopolitan",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "vodka",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "triple_sec",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cranberry_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-vodka-crush",
+  "name": "Blueberry Vodka Crush",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "vodka",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-paloma",
+  "name": "Frozen Paloma",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "grapefruit",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "agave",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "coconut-rum-freeze",
+  "name": "Coconut Rum Freeze",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "coconut_milk_canned",
+    "amount": 0.33,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "raspberry-prosecco-freeze",
+  "name": "Raspberry Prosecco Freeze",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "prosecco",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-white-sangria",
+  "name": "Frozen White Sangria",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_wine",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "grapes",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "orange_juice",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mudslide",
+  "name": "Frozen Mudslide",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "vodka",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "coffee_liqueur",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice_cream",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_whole",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pineapple-tequila-crush",
+  "name": "Pineapple Tequila Crush",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cherry-rum-freeze",
+  "name": "Cherry Rum Freeze",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "white_rum",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-chili-margarita",
+  "name": "Mango Chili Margarita",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "tequila",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "agave",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-irish-coffee",
+  "name": "Frozen Irish Coffee",
+  "category": "cocktail",
+  "program": "crush",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coffee_liqueur",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cold_brew",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "heavy_cream",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "virgin-pina-colada",
+  "name": "Virgin Pina Colada",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "coconut_milk_canned",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_juice",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "virgin-mojito",
+  "name": "Virgin Mojito Freeze",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 5,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1.0,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "virgin-daiquiri",
+  "name": "Virgin Strawberry Daiquiri",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "sugar",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "shirley-temple-freeze",
+  "name": "Cherry Shirley Freeze",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cucumber-lime-cooler",
+  "name": "Cucumber Lime Cooler",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "mint",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "virgin-paloma",
+  "name": "Virgin Paloma",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "grapefruit",
+    "amount": 0.75,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "agave",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "kombucha",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-lemonade",
+  "name": "Frozen Lemonade",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemonade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1.0,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "frozen-limeade",
+  "name": "Frozen Limeade",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "limeade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 1.0,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "arnold-palmer-freeze",
+  "name": "Frozen Arnold Palmer",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "green_tea",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemonade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "berry-spritz",
+  "name": "Berry Kombucha Spritz",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "kombucha",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "ginger-peach-mock",
+  "name": "Ginger Peach Mocktail",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "kombucha",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 4,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "watermelon-basil-mock",
+  "name": "Watermelon Basil Mocktail",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "watermelon",
+    "amount": 1.0,
+    "unit": "cup"
+   },
+   {
+    "foodID": "basil",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pomegranate-spritz",
+  "name": "Pomegranate Spritz",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "pomegranate_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kombucha",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pineapple-mint-mock",
+  "name": "Pineapple Mint Mocktail",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "pineapple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mint",
+    "amount": 4,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cranberry-orange-mock",
+  "name": "Cranberry Orange Mocktail",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cranberry_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "orange_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cranberry_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-coconut-mock",
+  "name": "Mango Coconut Mocktail",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spicy-tamarind-style",
+  "name": "Spicy Mango Chamoy Style",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "mango_frozen",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blue-lagoon-mock",
+  "name": "Blueberry Lagoon",
+  "category": "mocktail",
+  "program": "crush",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "lemonade_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "purple-cow",
+  "name": "Purple Cow",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pink-drink-kids",
+  "name": "Pink Drink",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "monster-smoothie",
+  "name": "Monster Smoothie",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "apple_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Call it a monster and the spinach stops being a problem."
+ },
+ {
+  "id": "peanut-butter-jelly-shake",
+  "name": "PB and J Shake",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peanut_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "banana-milk",
+  "name": "Simple Banana Milk",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 2,
+  "totalMinutes": 3,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "orange-fluff",
+  "name": "Orange Fluff",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "chocolate-banana-kids",
+  "name": "Chocolate Banana",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "apple-cinnamon-kids",
+  "name": "Apple Cinnamon Cup",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "applesauce",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "berry-yogurt-kids",
+  "name": "Berry Yogurt Cup",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "mango-sunshine-kids",
+  "name": "Mango Sunshine",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "blueberry-banana-kids",
+  "name": "Blueberry Banana",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "watermelon-slush-kids",
+  "name": "Watermelon Slush",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "watermelon",
+    "amount": 1.0,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "peach-cream-kids",
+  "name": "Peach Cream Cup",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "peach_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "yogurt_vanilla",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cocoa-oat-kids",
+  "name": "Cocoa Oat Cup",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "strawberry-oat-kids",
+  "name": "Strawberry Oat Cup",
+  "category": "kids",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "oats",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "immunity-shot-blend",
+  "name": "Ginger Turmeric Tonic",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 6,
+    "unit": "gram"
+   },
+   {
+    "foodID": "turmeric",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.05,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "golden-milk-freeze",
+  "name": "Golden Milk Freeze",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_milk_bev",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "turmeric",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "cinnamon",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.05,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "gut-health-kefir",
+  "name": "Gut Health Kefir",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "kefir",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "fiber-fix",
+  "name": "Fiber Fix",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "psyllium",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "raspberry",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Drink it soon after blending — psyllium thickens fast."
+ },
+ {
+  "id": "beet-nitric",
+  "name": "Beet Endurance",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "beet",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "apple_juice",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "electrolyte-refresh",
+  "name": "Electrolyte Refresh",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "watermelon",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "matcha-focus",
+  "name": "Matcha Focus",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "matcha",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "collagen",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spirulina-shot",
+  "name": "Spirulina Green Tonic",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spirulina",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "pineapple_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "maca-energy",
+  "name": "Maca Energy",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "oat_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "maca",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "almond_butter",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tart-cherry-sleep",
+  "name": "Tart Cherry Wind-Down",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "cherry_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cherry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "anti-inflammatory-berry",
+  "name": "Anti-Inflammatory Berry",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "green_tea",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "berries_mixed_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "turmeric",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "liver-love-green",
+  "name": "Citrus Green Tonic",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1.0,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "apple_green",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "omega-boost",
+  "name": "Omega Boost",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "flax",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "walnuts",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "blueberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "hydration-cucumber",
+  "name": "Hydration Cooler",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "coconut_water",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mint",
+    "amount": 3,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "iron-boost",
+  "name": "Iron Boost Green",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "pumpkin_seeds",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "strawberry_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": "Vitamin C from the orange helps you absorb the iron from the greens."
+ },
+ {
+  "id": "bone-broth-free-calcium",
+  "name": "Calcium Green",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "milk_2",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kale",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "banana_frozen",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "chia",
+    "amount": 1,
+    "unit": "tbsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "probiotic-tropical",
+  "name": "Probiotic Tropical",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "kefir",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mango_frozen",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 1,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "low-sugar-green",
+  "name": "Low Sugar Green",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "water",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "spinach",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "avocado",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "stevia",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.25,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cold-fighter",
+  "name": "Cold Fighter",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "orange_juice",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "kiwi",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 4,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 2,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "ice",
+    "amount": 0.5,
+    "unit": "cup"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "magnesium-cocoa",
+  "name": "Cocoa Magnesium Calm",
+  "category": "wellness",
+  "program": "blend",
+  "servings": 1,
+  "prepMinutes": 3,
+  "totalMinutes": 4,
+  "ingredients": [
+   {
+    "foodID": "almond_milk",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cacao_powder",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "pumpkin_seeds",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "date",
+    "amount": 2,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "gazpacho",
+  "name": "Chilled Gazpacho",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 6,
+  "totalMinutes": 7,
+  "ingredients": [
+   {
+    "foodID": "tomato",
+    "amount": 1.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cucumber",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "bell_pepper",
+    "amount": 0.25,
+    "unit": "piece"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cider_vinegar",
+    "amount": 0.5,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Chill it an hour before serving."
+ },
+ {
+  "id": "classic-hummus-style",
+  "name": "Tahini Chickpea-Free Dip",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "silken_tofu",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "tahini",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cumin",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "green-goddess-dressing",
+  "name": "Green Goddess Dressing",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mayonnaise",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "parsley",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "basil",
+    "amount": 8,
+    "unit": "gram"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "avocado-crema",
+  "name": "Avocado Crema",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "avocado",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "sour_cream",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cilantro",
+    "amount": 8,
+    "unit": "gram"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "caesar-style-dressing",
+  "name": "Creamy Garlic Dressing",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "mayonnaise",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "dijon",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "roasted-pepper-dip",
+  "name": "Red Pepper Feta Dip",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "bell_pepper",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "feta",
+    "amount": 70,
+    "unit": "gram"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cumin",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cilantro-lime-dressing",
+  "name": "Cilantro Lime Dressing",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "olive_oil",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cilantro",
+    "amount": 15,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "carrot-ginger-dressing",
+  "name": "Carrot Ginger Dressing",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "carrot",
+    "amount": 0.75,
+    "unit": "cup"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "cider_vinegar",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "ginger",
+    "amount": 6,
+    "unit": "gram"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "tomato-basil-soup-cold",
+  "name": "Cold Tomato Basil Soup",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "tomato",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "basil",
+    "amount": 8,
+    "unit": "gram"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "cucumber-yogurt-soup",
+  "name": "Cucumber Yogurt Soup",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "cucumber",
+    "amount": 1.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mint",
+    "amount": 5,
+    "unit": "gram"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 0.5,
+    "unit": "piece"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "spicy-peanut-sauce",
+  "name": "Spicy Peanut Sauce",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "peanut_butter",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "honey",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "water",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 0.5,
+    "unit": "piece"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "pesto-style",
+  "name": "Blender Basil Pesto",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "basil",
+    "amount": 30,
+    "unit": "gram"
+   },
+   {
+    "foodID": "olive_oil",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "walnuts",
+    "amount": 3,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 2,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 1,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": "Pulse rather than run it long if you want texture."
+ },
+ {
+  "id": "beet-hummus-style",
+  "name": "Beet Tahini Dip",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 5,
+  "totalMinutes": 6,
+  "ingredients": [
+   {
+    "foodID": "beet",
+    "amount": 1,
+    "unit": "cup"
+   },
+   {
+    "foodID": "tahini",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "lemon_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "cumin",
+    "amount": 0.5,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "ranch-style-dressing",
+  "name": "Herb Ranch Dressing",
+  "category": "savory",
+  "program": "blend",
+  "servings": 4,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "greek_yogurt_nonfat",
+    "amount": 0.5,
+    "unit": "cup"
+   },
+   {
+    "foodID": "mayonnaise",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "milk_2",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "parsley",
+    "amount": 0.25,
+    "unit": "cup"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "black_pepper",
+    "amount": 0.25,
+    "unit": "tsp"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.25,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ },
+ {
+  "id": "salsa-verde-style",
+  "name": "Creamy Jalapeño Salsa",
+  "category": "savory",
+  "program": "blend",
+  "servings": 2,
+  "prepMinutes": 4,
+  "totalMinutes": 5,
+  "ingredients": [
+   {
+    "foodID": "sour_cream",
+    "amount": 0.33,
+    "unit": "cup"
+   },
+   {
+    "foodID": "cilantro",
+    "amount": 10,
+    "unit": "gram"
+   },
+   {
+    "foodID": "jalapeno",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "lime_juice",
+    "amount": 2,
+    "unit": "tbsp"
+   },
+   {
+    "foodID": "garlic",
+    "amount": 1,
+    "unit": "piece"
+   },
+   {
+    "foodID": "salt",
+    "amount": 0.5,
+    "unit": "tsp"
+   }
+  ],
+  "tip": null
+ }
+]

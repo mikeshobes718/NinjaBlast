@@ -80,6 +80,9 @@ struct RecipeIngredient: Codable, Identifiable {
     var amountText: String {
         if let amountDisplay { return amountDisplay }
         guard let food else { return Amount.format(amount) }
+        if unit == .piece, food.pieceNameEchoesFoodName {
+            return Amount.format(amount)
+        }
         return "\(Amount.format(amount)) \(food.unitLabel(unit, amount: amount))"
     }
 
@@ -181,16 +184,17 @@ struct Recipe: Identifiable, Codable {
 enum RecipeBook {
     /// The printed insert recipes, plus the full library loaded from JSON.
     static let library: [Recipe] = loadLibrary()
+    static let all: [Recipe] = printed + library
+
+    private static let byDevice: [DeviceKind: [Recipe]] = Dictionary(
+        uniqueKeysWithValues: DeviceKind.allCases.map { kind in
+            (kind, printed.filter { $0.printedFor == kind } + library)
+        }
+    )
 
     static func all(for kind: DeviceKind) -> [Recipe] {
-        printed.filter { $0.printedFor == kind } + library
+        byDevice[kind] ?? library
     }
-
-    static func recipe(_ id: String) -> Recipe? {
-        all.first { $0.id == id }
-    }
-
-    static let all: [Recipe] = printed + library
 
     private static func loadLibrary() -> [Recipe] {
         guard let url = Bundle.main.url(forResource: "recipes", withExtension: "json"),

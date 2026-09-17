@@ -2,28 +2,246 @@ import SwiftUI
 
 struct RecipesView: View {
     @EnvironmentObject private var store: DeviceStore
+    @State private var filter = RecipeFilter()
+    @State private var showingFilters = false
+
     private let columns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
+
+    private var results: [Recipe] {
+        filter.apply(to: RecipeBook.all(for: store.kind), guide: store.guide)
+    }
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVGrid(columns: columns, spacing: 12) {
-                    ForEach(RecipeBook.all(for: store.kind)) { recipe in
-                        NavigationLink {
-                            RecipeDetailView(recipe: recipe)
-                        } label: {
-                            RecipeCard(recipe: recipe)
+                LazyVStack(spacing: 14, pinnedViews: []) {
+                    categoryStrip
+                    header
+                    if results.isEmpty {
+                        empty
+                    } else {
+                        LazyVGrid(columns: columns, spacing: 12) {
+                            ForEach(results) { recipe in
+                                NavigationLink {
+                                    RecipeDetailView(recipe: recipe)
+                                } label: {
+                                    RecipeCard(recipe: recipe)
+                                }
+                                .buttonStyle(.plain)
+                            }
                         }
-                        .buttonStyle(.plain)
+                        .padding(.horizontal, 16)
+                    }
+                }
+                .padding(.bottom, 28)
+            }
+            .background(BlastTheme.bg.ignoresSafeArea())
+            .navigationTitle("Recipes")
+            .navigationBarTitleDisplayMode(.large)
+            .searchable(text: $filter.query, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search recipes or ingredients")
+            .toolbar {
+                DeviceMenuButton()
+                ToolbarItem(placement: .topBarLeading) {
+                    Button { showingFilters = true } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: filter.activeCount > 0 ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
+                            if filter.activeCount > 0 {
+                                Text("\(filter.activeCount)")
+                                    .font(.caption.weight(.bold))
+                            }
+                        }
+                        .foregroundStyle(filter.activeCount > 0 ? BlastTheme.red : BlastTheme.secondary)
+                    }
+                }
+            }
+            .sheet(isPresented: $showingFilters) {
+                RecipeFilterSheet(filter: $filter, guide: store.guide)
+            }
+        }
+    }
+
+    private var categoryStrip: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                FilterChip(title: "All", isOn: filter.category == nil) { filter.category = nil }
+                ForEach(RecipeCategory.allCases) { category in
+                    FilterChip(title: category.title, isOn: filter.category == category, tint: category.accent) {
+                        filter.category = filter.category == category ? nil : category
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+
+    private var header: some View {
+        HStack {
+            Text("\(results.count) recipe\(results.count == 1 ? "" : "s")")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(BlastTheme.secondary)
+            Spacer()
+            Menu {
+                Picker("Sort", selection: $filter.sort) {
+                    ForEach(RecipeSort.allCases) { option in
+                        Text(option.title).tag(option)
+                    }
+                }
+            } label: {
+                HStack(spacing: 4) {
+                    Text(filter.sort.title)
+                        .font(.subheadline.weight(.semibold))
+                    Image(systemName: "arrow.up.arrow.down")
+                        .font(.caption.weight(.bold))
+                }
+                .foregroundStyle(BlastTheme.red)
+            }
+        }
+        .padding(.horizontal, 16)
+    }
+
+    private var empty: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "magnifyingglass")
+                .font(.largeTitle)
+                .foregroundStyle(BlastTheme.secondary)
+            Text("Nothing matches")
+                .font(.headline)
+                .foregroundStyle(.white)
+            Text("Loosen a filter or search for an ingredient you have on hand.")
+                .font(.subheadline)
+                .foregroundStyle(BlastTheme.secondary)
+                .multilineTextAlignment(.center)
+            Button("Clear filters") { filter.reset() }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(BlastTheme.red)
+                .padding(.top, 4)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 50)
+        .padding(.horizontal, 32)
+    }
+}
+
+struct RecipeFilterSheet: View {
+    @Binding var filter: RecipeFilter
+    let guide: Guide
+
+    @Environment(\.dismiss) private var dismiss
+
+    private let calorieOptions: [Double?] = [nil, 150, 250, 350]
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 22) {
+                    group("Diet") {
+                        chipGrid(DietFilter.allCases.filter { [.vegan, .dairyFree, .nutFree, .glutenFree].contains($0) })
+                    }
+                    group("Nutrition") {
+                        chipGrid(DietFilter.allCases.filter { [.highProtein, .lowSugar, .highFiber].contains($0) })
+                    }
+                    group("Avoid") {
+                        chipGrid(DietFilter.allCases.filter { [.caffeineFree, .noAlcohol].contains($0) })
+                    }
+                    group("Calories per serving") {
+                        HStack(spacing: 8) {
+                            ForEach(calorieOptions.indices, id: \.self) { index in
+                                let value = calorieOptions[index]
+                                FilterChip(
+                                    title: value.map { "Under \(Int($0))" } ?? "Any",
+                                    isOn: filter.maxKcal == value
+                                ) {
+                                    filter.maxKcal = value
+                                }
+                            }
+                        }
+                    }
+                    group("Vessel") {
+                        FilterChip(
+                            title: "Fits my \(guide.kind.shortName) in one blend",
+                            isOn: filter.fitsVesselOnly
+                        ) {
+                            filter.fitsVesselOnly.toggle()
+                        }
                     }
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 28)
             }
             .background(BlastTheme.bg.ignoresSafeArea())
-            .navigationTitle("Recipes")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar { DeviceMenuButton() }
+            .navigationTitle("Filters")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Reset") {
+                        let query = filter.query
+                        filter.reset()
+                        filter.query = query
+                    }
+                    .foregroundStyle(BlastTheme.secondary)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }.fontWeight(.semibold)
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+    }
+
+    private func group<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            SectionLabel(text: title)
+            content()
+        }
+    }
+
+    private func chipGrid(_ options: [DietFilter]) -> some View {
+        FlowLayout(spacing: 8) {
+            ForEach(options) { option in
+                FilterChip(title: option.title, isOn: filter.diets.contains(option)) {
+                    if filter.diets.contains(option) {
+                        filter.diets.remove(option)
+                    } else {
+                        filter.diets.insert(option)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Wraps chips onto as many lines as they need.
+struct FlowLayout: Layout {
+    var spacing: CGFloat = 8
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let width = proposal.width ?? .infinity
+        var x: CGFloat = 0, y: CGFloat = 0, rowHeight: CGFloat = 0
+        for view in subviews {
+            let size = view.sizeThatFits(.unspecified)
+            if x + size.width > width, x > 0 {
+                x = 0
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+        }
+        return CGSize(width: width == .infinity ? x : width, height: y + rowHeight)
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        var x = bounds.minX, y = bounds.minY, rowHeight: CGFloat = 0
+        for view in subviews {
+            let size = view.sizeThatFits(.unspecified)
+            if x + size.width > bounds.maxX, x > bounds.minX {
+                x = bounds.minX
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            view.place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(size))
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
         }
     }
 }
@@ -40,45 +258,58 @@ struct RecipeCard: View {
                     endPoint: .bottomTrailing
                 )
                 Image(systemName: recipe.symbol)
-                    .font(.system(size: 36, weight: .semibold))
+                    .font(.system(size: 34, weight: .semibold))
                     .foregroundStyle(.white.opacity(0.92))
                 VStack {
-                    HStack {
-                        Text("\(Int(recipe.perServing.kcal.rounded())) kcal")
-                            .font(.caption2.weight(.bold))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background(.black.opacity(0.35), in: Capsule())
-                        Spacer()
-                        Text(recipe.program.label)
-                            .font(.caption2.weight(.bold))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background(.black.opacity(0.35), in: Capsule())
+                    HStack(alignment: .top) {
+                        pill("\(Int(recipe.perServing.kcal.rounded())) kcal")
+                        Spacer(minLength: 4)
+                        pill(recipe.program.label)
                     }
                     Spacer()
+                    if recipe.printedFor != nil {
+                        HStack {
+                            pill("From the box")
+                            Spacer(minLength: 0)
+                        }
+                    }
                 }
                 .padding(8)
             }
-            .frame(height: 118)
-            VStack(alignment: .leading, spacing: 6) {
+            .frame(height: 110)
+            VStack(alignment: .leading, spacing: 5) {
                 Text(recipe.name)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(.white)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
-                Text("\(recipe.prepMinutes) min · \(recipe.yieldText)")
+                Text(subtitle)
                     .font(.caption)
                     .foregroundStyle(BlastTheme.secondary)
                     .lineLimit(1)
             }
             .padding(12)
-            .frame(maxWidth: .infinity, minHeight: 80, alignment: .topLeading)
+            .frame(maxWidth: .infinity, minHeight: 78, alignment: .topLeading)
         }
         .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+    }
+
+    private var subtitle: String {
+        let protein = Int(recipe.perServing.protein.rounded())
+        if protein >= 15 {
+            return "\(recipe.totalMinutes) min · \(protein)g protein"
+        }
+        return "\(recipe.totalMinutes) min · \(recipe.yieldText)"
+    }
+
+    private func pill(_ text: String) -> some View {
+        Text(text)
+            .font(.caption2.weight(.bold))
+            .foregroundStyle(.white)
+            .padding(.horizontal, 7)
+            .padding(.vertical, 3)
+            .background(.black.opacity(0.35), in: Capsule())
     }
 }
 
@@ -95,7 +326,7 @@ struct RecipeDetailView: View {
             VStack(alignment: .leading, spacing: 18) {
                 hero
                 if !recipe.fits(store.guide) {
-                    WarningBanner(text: "This makes about \(Int(recipe.volumeML.rounded())) ml, over the MAX FILL line on the \(store.kind.shortName). Halve it or blend it in two batches.")
+                    WarningBanner(text: "This loads about \(Int(recipe.volumeML.rounded())) ml, past the MAX FILL line on the \(store.kind.shortName). Halve it or blend it in two batches.")
                 }
                 tagRow
                 Picker("Section", selection: $tab) {
@@ -169,7 +400,7 @@ struct RecipeDetailView: View {
                             Text(item.amountText)
                                 .font(.body.weight(.semibold))
                                 .foregroundStyle(Color(red: 0.45, green: 0.72, blue: 1))
-                                .frame(width: 92, alignment: .leading)
+                                .frame(width: 96, alignment: .leading)
                             Text(item.nameText)
                                 .font(.body)
                                 .foregroundStyle(.white)

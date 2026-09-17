@@ -1225,7 +1225,7 @@
   "gramsPerPiece": null,
   "pieceName": null,
   "isLiquid": false,
-  "mlPerGram": 7.8863,
+  "mlPerGram": 3.0,
   "defaultUnit": "cup",
   "aliases": [
    "baby spinach"
@@ -1255,7 +1255,7 @@
   "gramsPerPiece": null,
   "pieceName": null,
   "isLiquid": false,
-  "mlPerGram": 5.9147,
+  "mlPerGram": 3.0,
   "defaultUnit": "cup",
   "aliases": [],
   "flags": {
@@ -1283,7 +1283,7 @@
   "gramsPerPiece": null,
   "pieceName": null,
   "isLiquid": false,
-  "mlPerGram": 5.0338,
+  "mlPerGram": 3.0,
   "defaultUnit": "cup",
   "aliases": [],
   "flags": {
@@ -1311,7 +1311,7 @@
   "gramsPerPiece": null,
   "pieceName": null,
   "isLiquid": false,
-  "mlPerGram": 6.5719,
+  "mlPerGram": 3.0,
   "defaultUnit": "cup",
   "aliases": [],
   "flags": {
@@ -1339,7 +1339,7 @@
   "gramsPerPiece": null,
   "pieceName": null,
   "isLiquid": false,
-  "mlPerGram": 11.8294,
+  "mlPerGram": 3.0,
   "defaultUnit": "cup",
   "aliases": [
    "rocket"
