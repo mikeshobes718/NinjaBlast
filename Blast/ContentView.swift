@@ -29,5 +29,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(DeviceStore())
         .preferredColorScheme(.dark)
 }

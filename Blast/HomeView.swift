@@ -1,10 +1,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var store: DeviceStore
+
+    private var guide: Guide { store.guide }
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
+                    DeviceSegmentedPicker()
                     deviceCard
                     specGrid
                     quickActions
@@ -17,23 +22,23 @@ struct HomeView: View {
             .navigationTitle("Blast")
             .navigationBarTitleDisplayMode(.large)
             .navigationDestination(for: GuideID.self) { id in
-                GuidePage(id: id)
+                GuidePage(id: id, guide: guide)
             }
         }
     }
 
     private var deviceCard: some View {
         HStack(alignment: .center, spacing: 16) {
-            BlenderMark()
+            BlenderMark(tall: guide.kind == .blastMax)
             VStack(alignment: .leading, spacing: 6) {
-                Text("NINJA BLAST")
+                Text(guide.wordmark)
                     .font(.caption.weight(.semibold))
                     .tracking(1.2)
                     .foregroundStyle(BlastTheme.secondary)
-                Text("Portable blender")
+                Text(guide.tagline)
                     .font(.title2.weight(.bold))
                     .foregroundStyle(.white)
-                Text("Series \(GuideBook.model) · 470 ml")
+                Text("Series \(guide.model) · \(guide.volume)")
                     .font(.subheadline)
                     .foregroundStyle(BlastTheme.secondary)
                 Text("READY TO BLEND")
@@ -52,7 +57,7 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 10) {
             SectionLabel(text: "At a glance")
             LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
-                ForEach(GuideBook.specs) { item in
+                ForEach(guide.specs) { item in
                     SpecTile(item: item)
                 }
             }
@@ -69,8 +74,14 @@ struct HomeView: View {
                 NavigationLink(value: GuideID.clean) {
                     quickTile(icon: "drop.fill", title: "Quick clean")
                 }
-                NavigationLink(value: GuideID.battery) {
-                    quickTile(icon: "battery.50", title: "Battery")
+                if guide.kind == .blastMax {
+                    NavigationLink(value: GuideID.programs) {
+                        quickTile(icon: "dial.medium.fill", title: "Programs")
+                    }
+                } else {
+                    NavigationLink(value: GuideID.battery) {
+                        quickTile(icon: "battery.50", title: "Battery")
+                    }
                 }
             }
             .buttonStyle(.plain)
@@ -96,12 +107,12 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 4) {
             SectionLabel(text: "Owner's guide")
                 .padding(.bottom, 8)
-            ForEach(GuideBook.topics) { topic in
+            ForEach(guide.topics) { topic in
                 NavigationLink(value: topic.id) {
                     GuideRow(topic: topic)
                 }
                 .buttonStyle(.plain)
-                if topic.id != GuideBook.topics.last?.id {
+                if topic.id != guide.topics.last?.id {
                     Divider().overlay(BlastTheme.hairline)
                 }
             }

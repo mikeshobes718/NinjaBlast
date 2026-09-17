@@ -1,13 +1,14 @@
 import SwiftUI
 
 struct RecipesView: View {
+    @EnvironmentObject private var store: DeviceStore
     private let columns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 12) {
-                    ForEach(GuideBook.recipes) { recipe in
+                    ForEach(store.guide.recipes) { recipe in
                         NavigationLink {
                             RecipeDetailView(recipe: recipe)
                         } label: {
@@ -22,6 +23,7 @@ struct RecipesView: View {
             .background(BlastTheme.bg.ignoresSafeArea())
             .navigationTitle("Recipes")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar { DeviceMenuButton() }
         }
     }
 }
@@ -40,6 +42,17 @@ struct RecipeCard: View {
                 Image(systemName: recipe.symbol)
                     .font(.system(size: 36, weight: .semibold))
                     .foregroundStyle(.white.opacity(0.92))
+                if let program = recipe.program {
+                    Text(program)
+                        .font(.caption2.weight(.bold))
+                        .tracking(0.6)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(.black.opacity(0.35), in: Capsule())
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                        .padding(8)
+                }
             }
             .frame(height: 118)
             VStack(alignment: .leading, spacing: 6) {
@@ -143,6 +156,11 @@ struct RecipeDetailView: View {
                 Text(recipe.yield)
                     .font(.subheadline)
                     .foregroundStyle(BlastTheme.secondary)
+                if let program = recipe.program {
+                    Text("Program · \(program)")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Color(red: 0.45, green: 0.72, blue: 1))
+                }
             }
             Spacer()
         }

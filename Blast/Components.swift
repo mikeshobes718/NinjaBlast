@@ -159,38 +159,68 @@ struct SpecTile: View {
 }
 
 struct BlenderMark: View {
+    var tall: Bool = false
+
+    var body: some View {
+        VStack(spacing: 0) {
+            Capsule()
+                .fill(Color.white.opacity(0.9))
+                .frame(width: 36, height: 10)
+                .offset(y: 6)
+            RoundedRectangle(cornerRadius: 6, style: .continuous)
+                .fill(
+                    LinearGradient(
+                        colors: [Color.white.opacity(0.22), Color.white.opacity(0.06)],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6, style: .continuous)
+                        .stroke(Color.white.opacity(0.35), lineWidth: 1.5)
+                )
+                .frame(width: 54, height: tall ? 84 : 72)
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .fill(BlastTheme.red)
+                .frame(width: 62, height: 28)
+                .overlay(alignment: .top) {
+                    Circle()
+                        .fill(Color(red: 0.55, green: 0.3, blue: 0.95))
+                        .frame(width: 8, height: 8)
+                        .offset(y: 6)
+                }
+        }
+        .frame(width: 72, height: 132, alignment: .bottom)
+    }
+}
+
+struct ProgramDial: View {
     var body: some View {
         ZStack {
-            VStack(spacing: 0) {
+            Circle()
+                .fill(BlastTheme.cardLift)
+                .frame(width: 148, height: 148)
+            Circle()
+                .stroke(Color.white.opacity(0.12), lineWidth: 1)
+                .frame(width: 148, height: 148)
+            VStack(spacing: 10) {
+                Text("Blend")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.white.opacity(0.9))
                 Capsule()
-                    .fill(Color.white.opacity(0.9))
-                    .frame(width: 36, height: 10)
-                    .offset(y: 6)
-                RoundedRectangle(cornerRadius: 6, style: .continuous)
-                    .fill(
-                        LinearGradient(
-                            colors: [Color.white.opacity(0.22), Color.white.opacity(0.06)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6, style: .continuous)
-                            .stroke(Color.white.opacity(0.35), lineWidth: 1.5)
-                    )
-                    .frame(width: 54, height: 72)
-                RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    .fill(BlastTheme.red)
-                    .frame(width: 62, height: 28)
-                    .overlay(alignment: .top) {
-                        Circle()
-                            .fill(Color(red: 0.55, green: 0.3, blue: 0.95))
-                            .frame(width: 8, height: 8)
-                            .offset(y: 6)
-                    }
+                    .fill(Color.white.opacity(0.5))
+                    .frame(width: 3, height: 14)
+                Image(systemName: "power")
+                    .font(.system(size: 22, weight: .semibold))
+                    .foregroundStyle(Color(red: 0.2, green: 0.85, blue: 0.4))
+                Capsule()
+                    .fill(Color.white.opacity(0.5))
+                    .frame(width: 3, height: 14)
+                Text("Crush")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.white.opacity(0.9))
             }
         }
-        .frame(width: 72, height: 120)
     }
 }
 

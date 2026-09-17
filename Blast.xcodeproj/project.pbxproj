@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2637392157B16DFF6A076EB3 /* BlastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9549F36C1AE83BD44056D0CB /* BlastApp.swift */; };
+		3AA23596049F56D7C266A7EC /* DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973CF87376746B5B2BE73BFE /* DeviceStore.swift */; };
 		46B77C646C3DE6448332C84C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E612DD0B68A5EB4C77B384 /* Components.swift */; };
 		6DF6BFD8CD198F54BA16D6EC /* LightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39350780D711FB33B905761A /* LightsView.swift */; };
 		857DE97D99BE23C690C0FD6F /* GuideData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489A96B63A46D3844DB9C5B3 /* GuideData.swift */; };
@@ -32,6 +33,7 @@
 		77E2DB79341EFE983A0285D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		91649C63763801092A6B8C5E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9549F36C1AE83BD44056D0CB /* BlastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlastApp.swift; sourceTree = "<group>"; };
+		973CF87376746B5B2BE73BFE /* DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStore.swift; sourceTree = "<group>"; };
 		B1D1A61CA621B2CC7089FAA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6AB0D30DA8992BF248C0135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 				1D0AC4C7835D052300BEA02D /* BlendView.swift */,
 				59E612DD0B68A5EB4C77B384 /* Components.swift */,
 				B1D1A61CA621B2CC7089FAA9 /* ContentView.swift */,
+				973CF87376746B5B2BE73BFE /* DeviceStore.swift */,
 				489A96B63A46D3844DB9C5B3 /* GuideData.swift */,
 				18F3DD20221327FFD5EC23BA /* GuidePages.swift */,
 				77E2DB79341EFE983A0285D2 /* HomeView.swift */,
@@ -170,6 +173,7 @@
 				93EC4484EDCA70D5E6F866E6 /* BlendView.swift in Sources */,
 				46B77C646C3DE6448332C84C /* Components.swift in Sources */,
 				E8B6C594B705355E1C8F0961 /* ContentView.swift in Sources */,
+				3AA23596049F56D7C266A7EC /* DeviceStore.swift in Sources */,
 				857DE97D99BE23C690C0FD6F /* GuideData.swift in Sources */,
 				C0F0057E843E82B7660FF02B /* GuidePages.swift in Sources */,
 				B8823B4A585BA7FA3318341B /* HomeView.swift in Sources */,

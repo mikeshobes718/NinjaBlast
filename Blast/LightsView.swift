@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct LightsView: View {
+    @EnvironmentObject private var store: DeviceStore
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -8,8 +10,20 @@ struct LightsView: View {
                     Text("Match the light on the motor base to a row. Colors tell you what to do next.")
                         .font(.subheadline)
                         .foregroundStyle(BlastTheme.secondary)
-                    ForEach(GuideBook.leds) { led in
+                    ForEach(store.guide.leds) { led in
                         LEDRow(status: led)
+                    }
+                    if let note = store.guide.ledNote {
+                        Card {
+                            HStack(alignment: .top, spacing: 10) {
+                                Image(systemName: "info.circle.fill")
+                                    .foregroundStyle(BlastTheme.secondary)
+                                Text(note)
+                                    .font(.footnote)
+                                    .foregroundStyle(BlastTheme.secondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
                     }
                     SupportCallButton()
                         .padding(.top, 8)
@@ -24,6 +38,7 @@ struct LightsView: View {
             .background(BlastTheme.bg.ignoresSafeArea())
             .navigationTitle("Lights")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar { DeviceMenuButton() }
         }
     }
 }

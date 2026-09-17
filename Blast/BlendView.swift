@@ -3,11 +3,11 @@ import AudioToolbox
 
 @MainActor
 final class BlendTimer: ObservableObject {
-    let duration: Double = GuideBook.cycleSeconds
-    @Published var remaining: Double = GuideBook.cycleSeconds
+    let duration: Double = 30
+    @Published var remaining: Double = 30
     @Published var isRunning = false
     private var startedAt: Date?
-    private var leftover: Double = GuideBook.cycleSeconds
+    private var leftover: Double = 30
     private var ticker: Timer?
 
     var progress: Double {
@@ -71,22 +71,29 @@ final class BlendTimer: ObservableObject {
 }
 
 struct BlendView: View {
+    @EnvironmentObject private var store: DeviceStore
     @StateObject private var timer = BlendTimer()
+
+    private var guide: Guide { store.guide }
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
                     timerCard
+                    if !guide.programs.isEmpty {
+                        programCard
+                    }
                     layerCard
                     VStack(alignment: .leading, spacing: 10) {
                         SectionLabel(text: "How to blend")
-                        ForEach(GuideBook.blendSteps) { step in
+                        ForEach(guide.blendSteps) { step in
                             StepCard(step: step)
                         }
                     }
-                    WarningBanner(text: "Never run the blender empty. Never blend hot, carbonated, or fizzy liquids. Pressure can pop the lid off.")
-                    WarningBanner(text: "Blades are sharp and stay on the motor base. Keep hands, hair, and loose clothing away from the cup.")
+                    ForEach(guide.blendWarnings, id: \.self) { text in
+                        WarningBanner(text: text)
+                    }
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 28)
@@ -95,7 +102,8 @@ struct BlendView: View {
             .navigationTitle("Blend")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                DeviceMenuButton()
+                ToolbarItem(placement: .topBarLeading) {
                     Button("Reset") { timer.reset() }
                         .foregroundStyle(BlastTheme.secondary)
                 }
@@ -106,7 +114,7 @@ struct BlendView: View {
     private var timerCard: some View {
         Card {
             VStack(spacing: 18) {
-                Text("30-SECOND CYCLE")
+                Text(guide.cycleLabel)
                     .font(.caption.weight(.semibold))
                     .tracking(1.1)
                     .foregroundStyle(BlastTheme.secondary)
@@ -144,7 +152,7 @@ struct BlendView: View {
                         }
                     }
                 )
-                Text("Matches one press of Start/Stop on the blender. Run another cycle if it is not smooth yet.")
+                Text(guide.timerNote)
                     .font(.footnote)
                     .foregroundStyle(BlastTheme.secondary)
                     .multilineTextAlignment(.center)
@@ -153,14 +161,44 @@ struct BlendView: View {
         }
     }
 
+    private var programCard: some View {
+        Card {
+            VStack(alignment: .leading, spacing: 12) {
+                SectionLabel(text: "Blend programs")
+                ForEach(guide.programs) { program in
+                    HStack(alignment: .top, spacing: 12) {
+                        ZStack {
+                            Circle()
+                                .fill(program.tint.opacity(0.2))
+                                .frame(width: 40, height: 40)
+                            Image(systemName: program.icon)
+                                .font(.system(size: 17, weight: .semibold))
+                                .foregroundStyle(program.tint)
+                        }
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(program.name)
+                                .font(.subheadline.weight(.bold))
+                                .foregroundStyle(.white)
+                            Text(program.detail)
+                                .font(.footnote)
+                                .foregroundStyle(BlastTheme.secondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                    }
+                }
+            }
+        }
+    }
+
     private var layerCard: some View {
         Card {
             VStack(alignment: .leading, spacing: 12) {
                 SectionLabel(text: "Load order")
-                layer(title: "Ice / frozen last", subtitle: "Fruit, ice cubes", fill: Color(red: 0.35, green: 0.72, blue: 0.95))
-                layer(title: "Fresh / soft", subtitle: "Fruit, greens, yogurt", fill: Color(red: 0.35, green: 0.78, blue: 0.48))
-                layer(title: "Liquids first", subtitle: "At least MIN LIQUID · ~177 ml", fill: Color(red: 0.28, green: 0.48, blue: 0.95))
-                Text("Never go below MIN LIQUID or above MAX FILL (~400 ml).")
+                ForEach(guide.loadOrder) { layer in
+                    loadRow(layer)
+                }
+                Text(guide.fillNote)
                     .font(.footnote)
                     .foregroundStyle(BlastTheme.secondary)
                     .padding(.top, 4)
@@ -168,23 +206,23 @@ struct BlendView: View {
         }
     }
 
-    private func layer(title: String, subtitle: String, fill: Color) -> some View {
+    private func loadRow(_ layer: LoadLayer) -> some View {
         HStack {
             RoundedRectangle(cornerRadius: 3, style: .continuous)
-                .fill(fill)
+                .fill(layer.tint)
                 .frame(width: 6, height: 36)
             VStack(alignment: .leading, spacing: 2) {
-                Text(title)
+                Text(layer.title)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(.white)
-                Text(subtitle)
+                Text(layer.subtitle)
                     .font(.caption)
                     .foregroundStyle(BlastTheme.secondary)
             }
             Spacer()
         }
         .padding(10)
-        .background(fill.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .background(layer.tint.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var timeLabel: String {

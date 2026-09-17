@@ -2,6 +2,7 @@ import SwiftUI
 
 struct GuidePage: View {
     let id: GuideID
+    let guide: Guide
 
     var body: some View {
         ScrollView {
@@ -12,12 +13,8 @@ struct GuidePage: View {
             .padding(.bottom, 28)
         }
         .background(BlastTheme.bg.ignoresSafeArea())
-        .navigationTitle(title)
+        .navigationTitle(guide.topic(id)?.title ?? "Guide")
         .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private var title: String {
-        GuideBook.topics.first(where: { $0.id == id })?.title ?? "Guide"
     }
 
     @ViewBuilder
@@ -31,6 +28,8 @@ struct GuidePage: View {
             setup
         case .blendHow:
             blendHow
+        case .programs:
+            programs
         case .clean:
             clean
         case .storage:
@@ -47,7 +46,7 @@ struct GuidePage: View {
             Text("Check these before first use.")
                 .font(.subheadline)
                 .foregroundStyle(BlastTheme.secondary)
-            ForEach(Array(GuideBook.parts.enumerated()), id: \.offset) { index, part in
+            ForEach(Array(guide.parts.enumerated()), id: \.offset) { index, part in
                 HStack(alignment: .top, spacing: 12) {
                     Text("\(index + 1)")
                         .font(.caption.weight(.bold))
@@ -62,34 +61,34 @@ struct GuidePage: View {
                 .padding(14)
                 .background(BlastTheme.card, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
             }
-            WarningBanner(text: "The BlastBlade assembly is built into the motor base. It is not removable.")
+            WarningBanner(text: guide.partsNote)
         }
     }
 
     private var battery: some View {
         VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 10) {
-                batteryStat(title: "Ninja claim", value: "15–20", caption: "light, mostly liquid")
-                batteryStat(title: "Real world", value: "6–10", caption: "typical mixes")
+            if let claim = guide.battery.claim, let real = guide.battery.real {
+                HStack(spacing: 10) {
+                    batteryStat(title: "Ninja claim", value: claim, caption: guide.battery.claimCaption)
+                    batteryStat(title: "Real world", value: real, caption: guide.battery.realCaption)
+                }
             }
             Card {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Realistic expectation")
+                    Text(guide.battery.headline)
                         .font(.headline)
                         .foregroundStyle(.white)
-                    Text("Treat 15–20 blends as a best-case number for thin mixes. Ice and frozen fruit cut that roughly in half. Top up every few uses instead of running it dead.")
-                        .font(.body)
-                        .foregroundStyle(BlastTheme.secondary)
-                    Text("A full charge takes about 2 hours on USB-C at 5V/3A (15W). Yellow LED means charge soon.")
-                        .font(.body)
-                        .foregroundStyle(BlastTheme.secondary)
+                    ForEach(guide.battery.body, id: \.self) { line in
+                        Text(line)
+                            .font(.body)
+                            .foregroundStyle(BlastTheme.secondary)
+                    }
                 }
             }
             SectionLabel(text: "Make it last")
-            bullet("Charge fully (solid green or purple) before first use and whenever it goes yellow.")
-            bullet("Do not leave it sitting fully drained for long periods.")
-            bullet("Use the included USB-C cable or a proper 5V/3A charger. A bad charger flashes red and blue.")
-            bullet("Skip back-to-back cycles when the battery is already low. That shortens lifespan.")
+            ForEach(guide.battery.tips, id: \.self) { tip in
+                bullet(tip)
+            }
         }
     }
 
@@ -113,7 +112,7 @@ struct GuidePage: View {
     private var setup: some View {
         VStack(alignment: .leading, spacing: 10) {
             WarningBanner(text: "Blades are sharp and stay on the motor base. They can still be active with the lid off. Keep hands, hair, and loose clothing away.")
-            ForEach(GuideBook.setupSteps) { step in
+            ForEach(guide.setupSteps) { step in
                 StepCard(step: step)
             }
         }
@@ -121,71 +120,82 @@ struct GuidePage: View {
 
     private var blendHow: some View {
         VStack(alignment: .leading, spacing: 10) {
-            ForEach(GuideBook.blendSteps) { step in
+            ForEach(guide.blendSteps) { step in
                 StepCard(step: step)
             }
-            WarningBanner(text: "Never run empty. Never blend hot, carbonated, or fizzy liquids.")
+            ForEach(guide.blendWarnings, id: \.self) { text in
+                WarningBanner(text: text)
+            }
+        }
+    }
+
+    private var programs: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("The dial has the program buttons above and below the power button.")
+                .font(.subheadline)
+                .foregroundStyle(BlastTheme.secondary)
+            ProgramDial()
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 8)
+            ForEach(guide.programs) { program in
+                Card {
+                    HStack(alignment: .top, spacing: 14) {
+                        ZStack {
+                            Circle()
+                                .fill(program.tint.opacity(0.2))
+                                .frame(width: 44, height: 44)
+                            Image(systemName: program.icon)
+                                .font(.title3.weight(.semibold))
+                                .foregroundStyle(program.tint)
+                        }
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(program.name)
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                            Text(program.detail)
+                                .font(.subheadline)
+                                .foregroundStyle(BlastTheme.secondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                    }
+                }
+            }
+            WarningBanner(text: "Stop the blend mode at any time by pressing the program button again.")
         }
     }
 
     private var clean: some View {
         VStack(alignment: .leading, spacing: 14) {
-            SectionLabel(text: "After every use")
-            ForEach(GuideBook.quickClean) { step in
+            SectionLabel(text: "Quick clean")
+            ForEach(guide.quickClean) { step in
                 StepCard(step: step)
             }
             SectionLabel(text: "Hand washing")
-            bullet("Wash the cup and lid with warm, soapy water.")
-            bullet("Use a long-handled brush on the blades. Grip the motor base, never the blades.")
-            bullet("Wipe the motor base with a clean, damp cloth only.")
-            bullet("Rinse everything and air-dry.")
+            ForEach(guide.handWash, id: \.self) { line in
+                bullet(line)
+            }
             SectionLabel(text: "Dishwasher")
-            bullet("Cup and lid are top-rack dishwasher safe.")
-            bullet("Do not use a heated drying cycle.")
-            bullet("Take the cup and lid off the motor base first.")
-            WarningBanner(text: "Never submerge the motor base or put it in the dishwasher. After cleaning near the USB-C port, air-dry 30 minutes before charging.")
+            ForEach(guide.dishwasher, id: \.self) { line in
+                bullet(line)
+            }
+            WarningBanner(text: guide.cleanWarning)
         }
     }
 
     private var storage: some View {
         VStack(alignment: .leading, spacing: 10) {
-            bullet("Store upright, fully assembled (lid + cup + base).")
-            bullet("Don't leave blended or unblended ingredients sitting in the cup.")
-            bullet("Don't stack anything on top of the unit.")
+            ForEach(guide.storage, id: \.self) { line in
+                bullet(line)
+            }
         }
     }
 
     private var trouble: some View {
         VStack(alignment: .leading, spacing: 14) {
-            troubleBlock(
-                title: "Ingredients keep getting stuck",
-                lines: [
-                    "Layer correctly: liquid up to MIN LIQUID, then fresh fruit or veg, then greens, then frozen or ice last.",
-                    "If it keeps sticking, add a little more liquid.",
-                    "Shake while it runs, flip it upside down mid-cycle, then start a new cycle right-side up.",
-                ]
-            )
-            troubleBlock(
-                title: "Blades locked / won't spin",
-                lines: [
-                    "Stay at or above MIN LIQUID and under MAX FILL.",
-                    "Turn the unit off. Clear the blades with a long utensil, then restart.",
-                ]
-            )
-            troubleBlock(
-                title: "Lid or cup won't seat",
-                lines: [
-                    "Set the assembled base or cup on a flat surface.",
-                    "Line up the threads evenly, then twist clockwise until it seals.",
-                    "When seated, the LED glows solid purple or yellow depending on battery.",
-                ]
-            )
-            troubleBlock(
-                title: "Control panel won't turn off",
-                lines: [
-                    "Press the power button to toggle the unit on and off.",
-                ]
-            )
+            ForEach(guide.troubles) { block in
+                troubleBlock(title: block.title, lines: block.lines)
+            }
             Text("Still stuck?")
                 .font(.headline)
                 .foregroundStyle(.white)

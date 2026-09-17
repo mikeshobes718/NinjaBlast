@@ -1,6 +1,13 @@
 # Blast
 
-Native iPhone companion for the Ninja Blast portable blender (series BC100BZ). It is the quick guide, LED decoder, 30-second blend timer, and the five recipes from the manual.
+Native iPhone companion for the Ninja Blast portable blenders. It covers two devices, switchable from the segmented control on the Guide tab or the menu in every other tab:
+
+| Device | Series | Vessel | Controls |
+| --- | --- | --- | --- |
+| Blast | BC100BZ | 470 ml · 16 oz | Power + Start/Stop, 30 s cycle |
+| Blast MAX | BC200 | 590 ml · 20 oz | Dial: Blend / power / Crush, plus Auto-iQ |
+
+Each device carries its own specs, owner's-guide topics, blend steps, load order, cleaning, troubleshooting, LED rows, and recipe set. The MAX content comes from the BC200 quick-start card and recipe insert; where that card documents nothing (LED codes other than the green ready light, parts list, storage), the app says so rather than borrowing the BC100 answer.
 
 Bundle id: `app.blast.guide`
 
@@ -46,16 +53,21 @@ Signing matches Packet: Automatic style, team `N7LRRN2YGY`.
 
 ```
 cd /Users/mike/Documents/NinjaBlast
-xcodegen generate
-xattr -cr Blast
-xcodebuild -project Blast.xcodeproj -scheme Blast \
-  -destination 'id=00008150-00180DA63644401C' \
-  -allowProvisioningUpdates \
-  DEVELOPMENT_TEAM=N7LRRN2YGY \
-  -derivedDataPath /tmp/Blast-dd \
-  build
-xcrun devicectl device install app --device 613E0636-1C1C-559C-80D5-D49470A531B2 \
-  /tmp/Blast-dd/Build/Products/Debug-iphoneos/Blast.app
+scripts/install.sh          # both phones (default)
+scripts/install.sh mike     # Mike's iPhone 17 Pro Max only
+scripts/install.sh liana    # Liana's iPhone 12 Pro Max only
 ```
 
-Use `/tmp/Blast-dd` so Documents xattrs do not break codesign. Swipe-kill Blast and reopen after install.
+The script generates the project, builds Release, and installs + launches over the local network. Both phones need to be unlocked and on the same Wi-Fi. Builds land in `/tmp/Blast-dd` so Documents xattrs do not break codesign.
+
+## Simulator screenshots
+
+Taps sent with AppleScript do not reach the Simulator's render surface, so drive state through defaults instead:
+
+```
+xcrun simctl spawn booted defaults write app.blast.guide blast.screenshotTab -int 2
+xcrun simctl spawn booted defaults write app.blast.guide blast.selectedDevice -string blastMax
+xcrun simctl launch booted app.blast.guide
+```
+
+Tabs are 0 Guide, 1 Blend, 2 Recipes, 3 Lights. Device values are `blast` and `blastMax`. On-device screenshots: `xcrun devicectl device capture screenshot --device <id> --destination shot.png`.
